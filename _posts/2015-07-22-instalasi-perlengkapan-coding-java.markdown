@@ -74,6 +74,14 @@ Terdapat beberapa IDE yang sering digunakan oleh developer java diantaranya adal
 - [Eclipse](http://www.eclipse.org/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
-pada tutorial selanjutnya kita akan menggunakan IDE `IntelliJ IDEA`, penggunaan IDE ini dikarenakan fitur yang disediakan cukup lengkap terutama untuk melakukan development sebuah aplikasi web dengan berbagai teknologi framework.
+###Instalasi NetBeans
+
+Download NetBeans pada [NetBeans](https://netbeans.org/), lalu beri akses eksekusi dengan perintah `chmod a+x netbeans.sh`. jalankan dengan perintah `./netbeans` maka akan muncul GUI instalasi netbeans.
+
+###Instalasi Eclipse
+
+Silahkan download pada [Eclipse](http://www.eclipse.org/), ekstrak folder tersebut lalu beri akses eksekusi dengan perintah `chmod a+x eclipse.sh`. dan jalankan eclipse dengan perintah `./eclipse`. Untuk memudahkan, maka buatlah shortcut untuk IDE tersebut.
+
+###Instalasi IntelliJ IDEA
 
 Download IDE tersebut pada [IntelliJ IDEA](https://www.jetbrains.com/idea/), lalu ekstrak pada folder tertentu. Di dalam folder tersebut terdapat folder bin yang di dalamnya terdapat file `idea.sh`, beri akses eksekusi dengan perintah `chmod a+x idea.sh` lalu jalankan file tersebut dengan perintah `./idea.sh` maka IntelliJ IDEA akan berjalan, untuk mempermudah akses IDE maka lakukan pembuatan shortcut terhadap IDE tersebut.
