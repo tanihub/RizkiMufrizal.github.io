@@ -55,7 +55,7 @@ Dapat disimpulkan bahwa sebuah class adalah representasi dari sebuah tabel dan s
 
 - Hibernate (Java)
 - Spring Data JPA (Java)
-- MyIbatis (Java)
+- MyBatis (Java)
 - JPA (Java)
 - Ebean (Java)
 - Waterline (Node jS / Javascript)
