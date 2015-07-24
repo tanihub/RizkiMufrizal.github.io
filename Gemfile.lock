@@ -14,6 +14,7 @@ GEM
     execjs (2.5.2)
     fast-stemmer (1.0.2)
     ffi (1.9.10)
+    ffi (1.9.10-x64-mingw32)
     ffi (1.9.10-x86-mingw32)
     hitimes (1.2.2)
     hitimes (1.2.2-x86-mingw32)
@@ -42,7 +43,7 @@ GEM
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     kramdown (1.8.0)
-    liquid (2.6.2)
+    liquid (2.6.3)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
@@ -90,3 +91,6 @@ DEPENDENCIES
   jekyll
   jekyll-sitemap
   octopress (~> 3.0.0.rc.12)
+
+BUNDLED WITH
+   1.10.6
