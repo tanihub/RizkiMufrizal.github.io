@@ -84,4 +84,6 @@ Silahkan download pada [Eclipse](http://www.eclipse.org/), ekstrak folder terseb
 
 ###Instalasi IntelliJ IDEA
 
-Download IDE tersebut pada [IntelliJ IDEA](https://www.jetbrains.com/idea/), lalu ekstrak pada folder tertentu. Di dalam folder tersebut terdapat folder bin yang di dalamnya terdapat file `idea.sh`, beri akses eksekusi dengan perintah `chmod a+x idea.sh` lalu jalankan file tersebut dengan perintah `./idea.sh` maka IntelliJ IDEA akan berjalan, untuk mempermudah akses IDE maka lakukan pembuatan shortcut terhadap IDE tersebut.
+Download IDE tersebut pada [IntelliJ IDEA](https://www.jetbrains.com/idea/), lalu ekstrak pada folder tertentu. Di dalam folder tersebut terdapat folder bin yang di dalamnya terdapat file `idea.sh`, beri akses eksekusi dengan perintah `chmod a+x idea.sh` lalu jalankan file tersebut dengan perintah `./idea.sh` Secara otomatis IDE tersebut akan membuat shortcut pada linux anda.
+
+Sekian tutorial kali ini dan selamat coding java. Terima kasih :).
