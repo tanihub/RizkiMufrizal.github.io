@@ -461,4 +461,4 @@ mvn exec:java -Dexec.mainClass="com.rizki.mufrizal.belajarHibernate.App"
 
 {% endhighlight %}
 
-Jangan lupa sesuakan dengan package project anda. Sekian tutorial belajar hibernate dan Terima kasih :). Untuk source code lengkap, penulis publish di [Github](https://github.com/RizkiMufrizal/Belajar-Hibernate).
+Jangan lupa sesuaikan dengan package project anda. Sekian tutorial belajar hibernate dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Hibernate](https://github.com/RizkiMufrizal/Belajar-Hibernate).
