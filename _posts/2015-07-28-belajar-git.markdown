@@ -19,6 +19,7 @@ Oke kita langsung mulai melakukan konfigurasi git pada linux. Berikut tahapan ya
 - Instalasi git dan Buat akun [github](https://github.com/).
 - Konfigurasi git
 - Buat repository baru dan belajar commit
+- Penjelasan Gitignore
 
 ##Instalasi Git dan Buat Akun Github
 
@@ -125,5 +126,9 @@ Untuk melakuakn remote sebuah project tidak jauh berbeda dengan clone sebuah pro
 `git remote add origin https://github.com/RizkiMufrizal/Belajar-Git.git`
 
 Setelah selesai, anda download dulu source code yang sudah ada di github dengan perintah 'git pull origin master' maka akan muncul file `index.md`. Untuk melakukan commit dan push sama seperti perintah sebelumnya.
+
+##Penjelasan Gitignore
+
+Gitignore merupakan sebuah file yang berfungsi untuk mendeklarasikan file - file apa saja yang tidak akan di commit. File gitignore biasanya ditulis dengan nama `.gitignore`, file ini bersifat hidden sehingga untuk menampilkannya, kita harus melakukan perintah `ctrl + H`. Misalnya jika kita membuat project java dengan menggunakan maven, maka akan muncul folder `target` yang berisi kompalasi program maka folder tersebut kita daftarkan pada gitignore sehingga tidak akan di commit. Untuk mengetahui file apa saja yang yang di daftarkan pada gitignore untuk setiap bahasa pemrograman, anda dapat melihatnya di [repository gitignore](https://github.com/github/gitignore). 
 
 Sekian tutorial Belajar Git, Semoga bermanfaat dan terima kasih :).
