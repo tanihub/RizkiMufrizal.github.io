@@ -14,7 +14,7 @@ Zaman sekarang banyak banget blog yang ditawarkan dalam bantuk cms seperti blogs
 
 >[Jekyll](http://jekyllrb.com/) merupakan sebuah tool yang disediakan untuk membuat sebuah blog.
 
-Halaman blog pada jekyll dibuat dengan format markdown. Markdown adalah sebuah bentuk file yang biasanya digunakan untuk format penulisan. Markdown ditemukan oleh John Gruber. Jekyll ini menyediakan format penulisan markdown yang nantinya akan di convert ke html. Kita akan memmulai membuat blog, berikut adalah tahap - tahapanya.
+Halaman blog pada jekyll dibuat dengan format markdown. Markdown adalah sebuah bentuk file yang biasanya digunakan untuk format penulisan. Markdown ditemukan oleh John Gruber. Jekyll ini menyediakan format penulisan markdown yang nantinya akan di convert ke html. Kita akan memulai membuat blog, berikut adalah tahap - tahapanya.
 
 - Instalasi ruby, tutorial [instalasi ruby](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-ruby/) jika anda belum melakukan instalasi ruby.
 - Instalasi jekyll
