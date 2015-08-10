@@ -40,7 +40,7 @@ Import project tersebut dengan menggunakan IDE kesukaan anda, disini penulis men
   <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-test</artifactId>
-    <version>4.1.6.RELEASE</version>
+    <version>4.2.0.RELEASE</version>
     <scope>test</scope>
   </dependency>
 
@@ -48,12 +48,12 @@ Import project tersebut dengan menggunakan IDE kesukaan anda, disini penulis men
   <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
-    <version>4.1.6.RELEASE</version>
+    <version>4.2.0.RELEASE</version>
   </dependency>
   <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
-    <version>4.1.6.RELEASE</version>
+    <version>4.2.0.RELEASE</version>
   </dependency>
 
   <!-- slf4j -->
