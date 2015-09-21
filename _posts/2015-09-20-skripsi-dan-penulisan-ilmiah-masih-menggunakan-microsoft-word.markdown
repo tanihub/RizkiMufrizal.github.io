@@ -16,7 +16,7 @@ Kebanyakan mahasiswa masih menggunakan microsoft word untuk mengerjakan skripsi 
 - Yang kedua, tata letak penulisan, penulisan anda awalnya rapi, tapi ketika ada salah satu yang harus diganti maka otomatis dari secara tidak langsung penulisan setelahnya akan hancur terlebih jika terdapat gambar dan tabel.
 - Penulisan huruf yang tidak konsisten, ini dapat dilihat dari nama bab, nama section dan lain sebagainya.
 - Jarak antar spasi tidak konsisten, ada yg 1,5 ada yg 2 bahakan ada 2,5 ini membuat penulisan menjadi acak - acakan.
-- Daftar isi diharuskan membuat sendiri, pembuatan nama tabel juga harus dibuat oleh pengguna misalnya `gambar 3.2 : helloword`
+- Daftar isi, daftar gambar dan daftar tabel diharuskan membuat sendiri, pembuatan nama tabel juga harus dibuat oleh pengguna misalnya `gambar 3.2 : helloword`
 - Untuk perpustakaan, kita diharuskan untuk membuat sendiri tanpa bantuan lain, sehingga banyak tulisan daftar pustaka yang tidak sesuai aturan penulisan.
 
 Trus bagaimana mengatasinya ? untuk soal penulisan ada beberapa tool yang disarankan, diantaranya adalah dengan menggunakan [LaTeX](https://www.latex-project.org/) dan [Markdown](https://en.wikipedia.org/wiki/Markdown). Diantara 2 tool tersebut, LaTeX merupakan salah satu tool yang paling banyak digunakan dalam bidang akademik sedangkan markdown lebih ke arah pembuatan ebook dan dokumentasi. Untuk penulisan skripsi dan penulisan ilmiah kita gunakan LaTex saja, tapi tunggu bukankah LaTeX itu diharuskan kita untuk coding secara manual ? yups tapi jangan khawatir karena ada sebuah tool lagi yang mirip fungsinya seperti microsoft word yaitu [LyX](http://www.lyx.org/).
