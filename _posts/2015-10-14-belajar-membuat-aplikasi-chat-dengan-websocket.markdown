@@ -49,7 +49,7 @@ npm install express jade socket.io --save
 
 ##Setup Kebutuhan Client
 
-Jalankan perintah `bower init`, sama seperti `npm ini` input data sesuai dengan yang diminta. Pada tutorial ini, kita akan menggunakan material design, maka memerlukan beberapa library. Jalankn perintah berikut.
+Jalankan perintah `bower init`, sama seperti `npm init` input data sesuai dengan yang diminta. Pada tutorial ini, kita akan menggunakan material design, maka memerlukan beberapa library. Jalankn perintah berikut.
 
 {% highlight bash %}
 bower install bootstrap-material-design bootstrap socket.io-client --save
