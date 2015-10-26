@@ -204,7 +204,7 @@ class MahasiswaController extends CI_Controller {
   {
 
     $response = array(
-      'content' => $this->Mahasiswa->getMahasiswa($page - 1, $size)->result(),
+      'content' => $this->Mahasiswa->getMahasiswa(($page - 1) * $size, $size)->result(),
       'totalPages' => ceil($this->Mahasiswa->getCountMahasiswa() / $size));
 
     $this->output
