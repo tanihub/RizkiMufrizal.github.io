@@ -98,7 +98,7 @@ Berikut penjelasan singkat tentang codingan diatas :
 
 ##Membuat Router
 
-Router merupakan sebuah controller, hanya saja dari penamaannya saja. Developer express lebih suka menyebutkan router sehingga disini penulis menggunakan dengan nama router. Sebelum kita membuat router, penulis membuat sebuah konfigurasi untuk log sebuah aplikasi. Buat 3 folder dengan nama `routes`, `utils` dan `logs` dan buat sebuah file dengan nama `logger.js` di dalam folder `logs`. Berikut adalah kodingan dari `logger.js`.
+Router merupakan sebuah controller, hanya saja dari penamaannya saja. Developer express lebih suka menyebutkan router sehingga disini penulis menggunakan dengan nama router. Sebelum kita membuat router, penulis membuat sebuah konfigurasi untuk log sebuah aplikasi. Buat 3 folder dengan nama `routes`, `utils` dan `logs` dan buat sebuah file dengan nama `logger.js` di dalam folder `utils`. Berikut adalah kodingan dari `logger.js`.
 
 {% highlight javascript %}
 var winston = require('winston');
