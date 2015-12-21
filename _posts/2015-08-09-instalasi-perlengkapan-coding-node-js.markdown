@@ -104,8 +104,8 @@ lakukan pengecekan node js pada terminal dengan perintah.
 
 {% highlight bash %}
 
-node -v
-npm -v
+node --version
+npm --version
 
 {% endhighlight %}
 
