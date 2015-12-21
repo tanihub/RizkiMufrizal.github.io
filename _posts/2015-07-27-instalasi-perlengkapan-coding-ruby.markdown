@@ -44,9 +44,9 @@ Kemudian lakukan path pada linux, buka file `environment` dengan sintak `sudo ge
 Restart komputer dan cek versi rvm, ruby dan gem dengan perintah
 
 {% highlight bash %}
-rvm -v
-ruby -v
-gem -v
+rvm --version
+ruby --version
+gem --version
 {% endhighlight %}
 
 Jika sudah, maka tahap selanjutnya adalah install `bundler`. Bundler ini sendiri berfungsi untuk mendownload dependency library yang dibutuhkan oleh project kita nantinya. Bedanya bundler dengan gem yaitu gem hanya sebagai penentu dari versi library yang akan kita gunakan sedangkan bundler akan mendownload semua kepentingan dari project dan akan memeriksa apakah sebuah library mempunyai missing dengan library yang lainnya. install bundler dengan perintah.
@@ -58,7 +58,7 @@ gem install bundler
 kemudian cek versi bundler dengan perintah
 
 {% highlight bash %}
-bundler -v
+bundler --version
 {% endhighlight %}
 
 Untuk melihat versi ruby yang telah diinstall di pc maka perintahnya
