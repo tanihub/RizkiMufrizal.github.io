@@ -16,62 +16,14 @@ Pada tutorial kali ini, penulis akan berbagi tulisan mengenai bagaimana membuat 
 
 >>[CodeIgniter](https://codeigniter.com/) adalah sebuah framework PHP yang berfungsi untuk mempermudah sebuah development aplikasi dengan pattern MVC (model view controller).
 
-Beberapa dari kita pernah mendengar framework, framework sebenarnya merupakan sebuah kerangka kerja yang akan kita gunakan. Dengan adanya kerangka kerja maka akan mempermudah development sebuah aplikasi, adanya standarisasi pembuatan aplikasi sehingga memperkecil kesalahan antara 1 developer dengan developer yang lain.
+Beberapa dari kita pernah mendengar framework, framework sebenarnya merupakan sebuah kerangka kerja yang akan kita gunakan. Dengan adanya kerangka kerja maka akan mempermudah development sebuah aplikasi, adanya standarisasi pembuatan aplikasi sehingga memperkecil kesalahan antara 1 developer dengan developer yang lain. Bagi yang belum melakukan instalasi kelengkapan coding PHP, silahkan akses di [Instalasi Perlengkapan Coding PHP](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-php/) 
 
 Berikut merupakan tahapan yang akan kita kerjakan pada saat development REST API dengan codeigniter.
 
-* Instalasi Perlengkapan PHP
 * Membuat Database
 * Membuat Dan Setting Project CodeIgniter
 * Tahap Development REST API
 * Uji Coba REST API
-
-##Instalasi Perlengkapan PHP
-
-Karena kita akan menggunakan PHP maka diwajibkan untuk install PHP. Untuk linux, silahkan jalankan perintah berikut.
-
-{% highlight bash %}
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:ondrej/php5-5.6
-sudo apt-get update
-sudo apt-get install php5
-{% endhighlight %}
-
-Setelah selesai install mysql dengan perintah
-
-{% highlight bash %}
-sudo add-apt-repository ppa:ondrej/mysql-5.6
-sudo apt-get update
-sudo apt-get install mysql-server mysql-client
-{% endhighlight %}
-
-Tahap selanjutnya kita akan melakukan instalasi [Composer](https://getcomposer.org/). apa itu composer ?
-
->>[Composer](https://getcomposer.org/) merupakan sebuah build tool untuk dependency manager terhadap library yang dibutuhkan oleh project PHP.
-
-Buka terminal pada folder yang akan dijadikan sebagai folder composer. Kemudian jalankan perintah berikut
-
-{% highlight bash %}
-curl -sS https://getcomposer.org/installer | php
-{% endhighlight %}
-
-Jika sudah, sekarang kita akan lakukan path, jalankan perintah `sudo gedit /etc/environment` kemudian sisipakan pada baris atas seperti berikut.
-
-{% highlight bash %}
-COMPOSER_HOME=/home/rizki/programming/build-tool/composer
-{% endhighlight %}
-
-ganti isian COMPOSER_HOME dengan directori tempat instalasi composer anda. Kemudian pada bagian `PATH` tambahkan seperti berikut.
-
-{% highlight bash %}
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/rizki/programming/build-tool/composer"
-{% endhighlight %}
-
-jangan lupa sesuaikan dengan folder tempat instalasi composer anda. Restart PC anda dan cek composer anda dengan perintah
-
-{% highlight bash %}
-composer.phar -version
-{% endhighlight %}
 
 ##Membuat Database
 
