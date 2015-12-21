@@ -62,8 +62,8 @@ PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/u
 kemudian lakukan pengujian dengan menjalankan beberapa perintah berikut
 
 {% highlight bash %}
-java --version
-mvn --version
+java -version
+mvn -version
 {% endhighlight %}
 
 ##Instalasi IDE
