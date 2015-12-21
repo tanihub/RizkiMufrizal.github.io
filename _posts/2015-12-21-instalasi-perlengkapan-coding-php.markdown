@@ -145,3 +145,5 @@ jangan lupa sesuaikan dengan folder tempat instalasi composer anda. Restart PC a
 {% highlight bash %}
 composer.phar --version
 {% endhighlight %}
+
+Sekian artikel mengenai instalasi perlengkapan coding php di linux dan terima kasih :).
