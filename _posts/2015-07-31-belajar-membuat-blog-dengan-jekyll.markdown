@@ -56,7 +56,13 @@ Hello..., Saya sedang belajar membuat blog dengan jekyll.
 
 {% endhighlight %}
 
-Oke jalankan server lagi, lalu lihat perubahannya, akan ada 1 posting dengan judul belajar jekyll. Markdown juga menyediakan sintak highlight jika nantinya kita ingin melakukan posting dengan menggunakan sintak pemrograman. Penulis akan memberi contoh, masukkan sintak berikut ke dalam file yang tadi dibuat tepatnya dibawah tulisan `Hello..., Saya sedang belajar membuat blog dengan jekyll`. Kira - kira hasilnya seperti ini.
+Oke jalankan server lagi, lalu lihat perubahannya, akan ada 1 posting dengan judul belajar jekyll. Markdown juga menyediakan sintak highlight jika nantinya kita ingin melakukan posting dengan menggunakan sintak pemrograman. Penulis akan memberi contoh, masukkan sintak berikut ke dalam file yang tadi dibuat tepatnya dibawah tulisan 
+
+{% highlight bash %}
+Hello..., Saya sedang belajar membuat blog dengan jekyll
+{% endhighlight %}
+
+Kira - kira hasilnya seperti ini.
 
 {% highlight text %}
 
