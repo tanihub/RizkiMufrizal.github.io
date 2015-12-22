@@ -55,15 +55,15 @@ Setelah mengetahui bagaimana package management pada keluarga debian, selanjutny
 
 Mengapa menggunakan PPA ? dikarenakan di dalam repository ubuntu resmi tidak menyediakan software - software yang kita inginkan misalnya seperti `java oracle` dan sebagainya. Untuk menambahkan PPA berikut adalah bentuk umumnya :
 
-```
+{% highlight bash %}
 sudo add-apt-repository ppa:Pembuat PPA/Nama PPA
-```
+{% endhighlight %}
 
 Jika kita ingin melakukan instalasi sticky notes maka kita akan menambahkan PPA seperti berikut ini, jangan lupa bahwa perintah ini menggunakan terminal linux.
 
-```
+{% highlight bash %}
 sudo add-apt-repository ppa:umang/indicator-stickynotes
-```
+{% endhighlight %}
 
 Jika berhasil maka akan muncul gambar seperti berikut.
 
@@ -71,9 +71,9 @@ Jika berhasil maka akan muncul gambar seperti berikut.
 
 Setelah selesai, selanjutnya silahkan update repository di dalam komputer anda dengan perintah
 
-```
+{% highlight bash %}
 sudo apt-get update
-```
+{% endhighlight %}
 
 Jika telah selesai melakukan update maka hasilnya akan seperti ini.
 
@@ -81,15 +81,15 @@ Jika telah selesai melakukan update maka hasilnya akan seperti ini.
 
 Langkah selanjutnya adalah melakukan instalasi sticky notes nya sendiri, berikut adalah bentuk umum instalasi dengan `apt-get`.
 
-```
+{% highlight bash %}
 sudo apt-get install Nama Software
-```
+{% endhighlight %}
 
 maka untuk instalasi sticky notes jalankan perintah berikut
 
-```
+{% highlight bash %}
 sudo apt-get install indicator-stickynotes
-```
+{% endhighlight %}
 
 Jika berhasil maka sticky notes akan terinstall dan diterminal anda akan muncul seperti ini.
 
@@ -101,15 +101,15 @@ Sebelumnya kita melakukan instalasi dengan menggunakan `apt-get` nah kali ini ki
 
 Berikut merupakan bentuk umum untuk melakukan instalasi dengan menggunakan dpkg
 
-```
+{% highlight bash %}
 sudo dpkg -i File Executable.deb
-```
+{% endhighlight %}
 
 Setelah selesai mendownload file executable `mysql workbench` langkah selanjutnya pindahkan file tersebut ke folder `home`. Kemudian jalankan perintah berikut.
 
-```
+{% highlight bash %}
 sudo dpkg -i mysql-workbench-community-6.3.5-1ubu1404-amd64.deb
-```
+{% endhighlight %}
 
 Beberapa software jika kita melakukan instalasi dengan `dpkg` akan mengeluarkan `error`, contohnya adalah ketika kita melakukan instalasi `mysql workbench` akan muncul pesan error seperti berikut ini.
 
@@ -121,9 +121,9 @@ Dari gambar diatas dapat dilihat bahwa software `mysql workbench` diinstall akan
 
 Artinya adalah bahwa `mysql workbench` membutuhkan beberapa dependency library akan tetapi library tersebut belum diinstall di dalam komputer anda. Untuk mengatasi dependency library ini maka kita harus menggunakan fungsi `apt-get` silahkan sambungkan internet anda lalu jalankan perintah berikut.
 
-```
+{% highlight bash %}
 sudo apt-get install -f
-```
+{% endhighlight %}
 
 Fungsi perintah diatas adalah dia akan mencarikan dependency library apa saja yang dibutuhkan oleh software `mysql workbench` sehingga akan muncul seperti ini.
 
@@ -137,21 +137,21 @@ Lalu ketik huruf `y` dan tekan `enter` maka dia akan mendownload dependency libr
 
 Setelah mengetahui bagaimana instalasi software, maka langkah selanjutnya adalah bagaimana cara uninstall software. Ada 2 cara, berikut adalah bentuk umumnya.
 
-```
+{% highlight bash %}
 sudo apt-get remove Nama Sofware
-```
+{% endhighlight %}
 
 dan 
 
-```
+{% highlight bash %}
 sudo apt-get purge Nama Sofware
-```
+{% endhighlight %}
 
 Perbedaanya adalah ketika menggunakan remove maka software akan diunstall sedangkan dengan menggunakan purge maka software diuninstall berserta konfigurasi softwarenya. Penulis akan melakukan uninstall terhadap software sticky notes maka jalankan perintah berikut.
 
-```
+{% highlight bash %}
 sudo apt-get purge indicator-stickynotes
-```
+{% endhighlight %}
 
 maka hasil akhirnya adalah seperti berikut ini.
 
@@ -161,20 +161,20 @@ maka hasil akhirnya adalah seperti berikut ini.
 
 Bagaimana membuat shortcut pada ubuntu jika software tersebut tidak perlu diinstall seperti Eclipse, IntelliJ IDEA, Spring Tool Suite, dan Andoid Studio ? kita bisa menggunakan aplikasi lain untuk membuat shortcut aplikasi tersebut. Silahkan jalankan perintah berikut.
 
-```
+{% highlight bash %}
 sudo apt-get install --no-install-recommends gnome-panel
-```
+{% endhighlight %}
 
 Misalnya penulis ingin membuat shortcut untuk spring tool suite, silahkan download terlebih dahulu di [Spring Tool Suite](https://spring.io/tools/sts/all) dan extrack. Setelah selesai buka terminal dan jalankan perintah.
 
-```
+{% highlight bash %}
 sudo gnome-desktop-item-edit --create-new /usr/share/applications/
-```
+{% endhighlight %}
 
 maka akan muncul sebuah windows `create launcher` silahkan isi sesuai dengan nama aplikasi, pada bagian command silahkan browser file executable. Setelah selesai lalu jalankan perintah berikut untuk memberikan hak akses.
 
-```
+{% highlight bash %}
 sudo chmod a+x /usr/share/applications/Spring\ Tool\ Suite.desktop
-```
+{% endhighlight %}
 
 Setelah selesai silahkan cari aplikasi tersebut di dashboard ubuntu anda :D. Sekian artikel mengenai belajar instalasi software di linux dan terima kasih :).
