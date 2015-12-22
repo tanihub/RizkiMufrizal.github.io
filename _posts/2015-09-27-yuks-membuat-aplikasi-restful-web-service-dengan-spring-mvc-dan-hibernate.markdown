@@ -554,7 +554,7 @@ log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
 log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss:SSS} %C:%L %-5p - %m%n
 {% endhighlight %}
 
-Akhirnya selesai juga :D, mari kita lakukan uji coba dengan menggunakan [Postman](https://www.getpostman.com/). Buka postman lalu lakukan uji coba dengan method `POST` untuk menyimpan data seperti ini.
+Untuk menjalankannya dengan perintah `mvc clean jetty:run` mari kita lakukan uji coba dengan menggunakan [Postman](https://www.getpostman.com/). Buka postman lalu lakukan uji coba dengan method `POST` untuk menyimpan data seperti ini.
 
 ![Screenshot from 2015-09-27 21:30:25.png](../images/Screenshot from 2015-09-27 21:30:25.png)
 
