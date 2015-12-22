@@ -21,15 +21,22 @@ Pada tutorial ini, penulis hanya menjelaskan bagaimana instalasi pada sistem ope
 ##Instalasi JDK
 Untuk melakukan instalasi pada ubuntu, tambahkan repository PPA berikut dengan menggunakan terminal
 
-`sudo add-apt-repository ppa:webupd8team/java`
+{% highlight bash %}
+sudo add-apt-repository ppa:webupd8team/java
+{% endhighlight %}
+
 
 lalu lakukan update
 
-`sudo apt-get update`
+{% highlight bash %}
+sudo apt-get update
+{% endhighlight %}
 
 jika update telah selesai, maka lakukan instalasi dengan perintah
 
-`sudo apt-get install oracle-java8-installer`
+{% highlight bash %}
+sudo apt-get install oracle-java8-installer
+{% endhighlight %}
 
 ##Instalasi build tool java
 
@@ -44,7 +51,9 @@ Pada tutorial kali ini, kita hanya menggunakan maven sebagai build toolnya, sila
 
 Instalasi JDK dan build tool telah dilakukan, tahap selanjutnya adalah menambahkan environment variabel sehingga variabel tersebut terbaca pada saat kita menggunakan terminal. buka file `environment` dengan perintah berikut
 
-`sudo gedit /etc/environment`
+{% highlight bash %}
+sudo gedit /etc/environment
+{% endhighlight %}
 
 kemudian sisipkan di baris paling atas
 
