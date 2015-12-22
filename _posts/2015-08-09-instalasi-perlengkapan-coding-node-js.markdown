@@ -49,11 +49,15 @@ NVM telah di clone pada folder .nvm, untuk melihat folder tersebut pada linux, k
 
 Kemudian kita akan melakukan PATH terhadap nvm. Jalankan perintah berikut.
 
-`sudo gedit /etc/environment`
+{% highlight bash %}
+sudo gedit /etc/environment
+{% endhighlight %}
 
 kemudian masukkan variabel berikut pada bagian atas.
 
-`NVM_HOME=/home/rizki/.nvm`
+{% highlight bash %}
+NVM_HOME=/home/rizki/.nvm
+{% endhighlight %}
 
 Sesuaikan dengan directory anda. Kemudian tambahkan pada bagian PATH seperti ini.
 
@@ -65,7 +69,9 @@ PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/u
 
 Kemudian masuk ke folder .nvm dengan perintah
 
-`cd ~/.nvm/`
+{% highlight bash %}
+cd ~/.nvm/
+{% endhighlight %}
 
 kemudian jalankan perintah berikut untuk inisialisasi script nvm pada `.bashrc`
 
@@ -78,27 +84,45 @@ chmod a+x install.sh
 
 Kemudian restart komputer anda dan lakukan pengecekan nvm dengan perintah.
 
-`nvm --version`
+{% highlight bash %}
+nvm --version
+{% endhighlight %}
 
 Jika berhasil, kita akan melakukan instalasi node js dengan perintah.
 
-`nvm install stable`
+{% highlight bash %}
+nvm install stable
+{% endhighlight %}
 
 tunggu hingga proses download node js selesai. Node js yang di download adalah versi yang paling stable. Untuk mengecek versi node js dapat menggunakan perintah.
 
-`nvm list-remote`
+{% highlight bash %}
+nvm list-remote
+{% endhighlight %}
 
 sedangkan jika ingin melihat list node js yang telah diinstall di pc dengan perintah.
 
-`nvm list`
+{% highlight bash %}
+nvm list
+{% endhighlight %}
 
 Untuk menghapus node js yang lama dapat dengan menggunakan perintah.
 
-`nvm uninstall versi yang mw di uninstall`
+{% highlight bash %}
+nvm uninstall versi yang mw di uninstall
+{% endhighlight %}
 
-contohnya seperti `nvm uninstall v0.12.6`. Untuk mengaktifkan node js yang paling stable maka gunakan perintah berikut.
+contohnya seperti 
 
-`nvm alias default stable`
+{% highlight bash %}
+nvm uninstall v0.12.6
+{% endhighlight %}
+
+Untuk mengaktifkan node js yang paling stable maka gunakan perintah berikut.
+
+{% highlight bash %}
+nvm alias default stable
+{% endhighlight %}
 
 lakukan pengecekan node js pada terminal dengan perintah.
 
@@ -128,17 +152,23 @@ console.log('Server running at http://127.0.0.1:3000/');
 
 Sintak diatas berfungsi untuk membuat sebuah server, kemudian kita menampilkan tulisan hello word pada saat user melakukan akses pada `http://127.0.0.1:3000/` atau `http://localhost:3000/`. Untuk menjalankan servernya dengan perintah.
 
-`node app.js`
+{% highlight bash %}
+node app.js
+{% endhighlight %}
 
 ###Instalasi Nodemon
 
 Untuk mempermudah pengembangan aplikasi, kita membutuhkan server yang bisa autoreload ketika developer mengubah source code. Salah satu tool yang mendukung tersebut adalah dengan menggunakan [Nodemon](http://nodemon.io/). Untuk melakukan instalasi cukup dengan menggunakan perintah.
 
-`npm install -g nodemon`
+{% highlight bash %}
+npm install -g nodemon
+{% endhighlight %}
 
 perintah `-g` berarti bersifat global. Kemudian untuk menjalankan source code tadi hanya dengan menggunakan perintah.
 
-`nodemon app.js`
+{% highlight bash %}
+nodemon app.js
+{% endhighlight %}
 
 Salah satu kelebihan nodemon adalah dapat menjalankan source code dalam bentuk [coffee script](http://coffeescript.org/) dan terdapat fitur autoreload server. Coba anda ganti source code tanpa mematikan server, kemudian di save maka nodemon akan melakukan reload server.
 
@@ -146,6 +176,8 @@ Salah satu kelebihan nodemon adalah dapat menjalankan source code dalam bentuk [
 
 Bower merupakan sebuah tool yang digunakan untuk melakukan manajemen kelengkapan library web seperti js, css dan img. Bower mirip dengan npm, bedanya adalah npm lebih di khususkan untuk manajemen kelengkapan library javascript. Baiklah untuk melakukan instalasi bower dapat dilakukan dengan perintah.
 
-`npm install -g bower`
+{% highlight bash %}
+npm install -g bower
+{% endhighlight %}
 
 Sekian tutorial tentang instalasi perlengkapan coding node js, semoga bermanfaat dan terima kasih :).
