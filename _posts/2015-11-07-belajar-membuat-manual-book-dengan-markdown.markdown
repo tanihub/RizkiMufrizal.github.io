@@ -36,7 +36,7 @@ sudo apt-get install pandoc texlive-latex-base texlive-xetex latex-beamer
 
 ##Download Template Manual Book
 
-Silahkan download terlebih dahulu [template manual book markdown](https://github.com/RizkiMufrizal/Manual-Book-Markdown). Di dalam template tersebut terdapat beberapa file yaitu `01-teori.md`,`02-perancangan.md`,`03-implementasi.md`,dan `04-uji-coba.md` berfungsi mewakili dari masing - masing bab, misalnya `01-teori.md` mewakili dari bab 1 dan sebagainya.
+Silahkan download terlebih dahulu [template manual book markdown](https://github.com/RizkiMufrizal/Manual-Book-Markdown). Di dalam template tersebut terdapat beberapa file yaitu `01-teori.md`,`02-perancangan.md` dan lain - lain berfungsi mewakili dari masing - masing bab, misalnya `01-teori.md` mewakili dari bab 1 dan sebagainya.
 
 ##Cara Penggunaan Template
 
