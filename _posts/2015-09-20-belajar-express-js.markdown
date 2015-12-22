@@ -91,7 +91,7 @@ Framework express mendukung pattern MVC (model view controller) sama halnya sepe
 
 Berikut penjelasan singkat tentang codingan diatas :
 
-- `var pegawai, mongoose = require('mongoose'), Schema = mongoose.Schema;`  merupakan deklarasi dari masing - masing variabel. variabel pegawai merupakan variabel kosong, variabel monggose merupakan variabel dengan type data mongoose dan variabel Schema merupakan variabel dari Schema mongoose. Tidak seperti bahasa pemrograman lain, javascript dapat langsung mendeklarasikan variabelnya tanpa type data. require('monggose') artinya kita melakukan import dari library monggose, ini sama halnya ketika kita melakukan import pada bahasa pemrograman java.
+- `var pegawai, mongoose;`  merupakan deklarasi dari masing - masing variabel. variabel pegawai merupakan variabel kosong, variabel monggose merupakan variabel dengan type data mongoose dan variabel Schema merupakan variabel dari Schema mongoose. Tidak seperti bahasa pemrograman lain, javascript dapat langsung mendeklarasikan variabelnya tanpa type data. require('monggose') artinya kita melakukan import dari library monggose, ini sama halnya ketika kita melakukan import pada bahasa pemrograman java.
 - codingan selanjutnya merupakan pendeklarasian dari pada column - column yang ada pada sebuah database. Konsep ODM dan ORM memiliki kemiripan akan tetapi terdapat perbedaan yaitu pada ODM terdapat document dan tidak ada relasi sedangkan pada ORM terdapat table dan terdapat relasi.
 - collection : merupakan definisi dari pada collection pada mongodb, jika pada database RDBMS (SQL) kita mengenalnya dengan table. Silahkan pelajari lebih lanjut mengenai database MongoDB :).
 - module.exports : merupakan kodingan untuk melakukan export variabel pegawai, sehingga variabel pegawai dapat diakses oleh file javascript yang lainnya.
@@ -263,13 +263,13 @@ Untuk codingan diatas akan dibahas pada tutorial selanjutnya mengenai log sebuah
 
 Berikut merupakan penjelasan singkat :
 
-- `var express = require('express'), Pegawai = require('../models/Pegawai') ...` merupakan codingan untuk melakukan import file javascript.
+- `var express = require('express')` merupakan codingan untuk melakukan import file javascript.
 -  dimulai dari `router.get('/', function(req, res)` merupakan sebuah method untuk mengambil data lalu data tersebut di lempar ke view sekaligus melakukan render terhadap sebuah page jade. Disana terdapat kodingan `Pegawai.find` yang berfungsi untuk mengambil semua data pegawai, Lalu bagaimana melempar ke view ? pada bagian `res.render('index', {pegawais: pegawais})` merupakan aksi untuk melakukan render dengan nama page `index` lalu mengirim data dengan parameter `pegawais`.
-- `router.get('/tambah/pegawai', csrfProtection, function(req, res)` merupakan kodingan untuk menampilkan halaman tambah data pegawai, disini penulis menggunakan token CSRF :).
-- `router.post('/save/pegawai', csrfProtection, function(req, res)` merupakan method untuk menyimpan data pegawai. Untuk menyimpan, kita menggunakan Model yaitu Pegawai akan tetapi kita diharuskan membuat object baru, dapat dilihat di `var pegawai = new Pegawai`. Untuk idPegawai kita membuatnya dengan menggunakan bantuan `node-uuid` sedangkan data lain berdasarkan dari pada form, untuk mengambil data pada form kita menggunakan `req.body.namaTextField`. Jika data tersimpan maka kita akan melakukan redirect ke page awal.
-- method selanjutnya adalah `router.get('/edit/pegawai/:idPegawai', csrfProtection, function(req, res)` yang berfungsi untuk melalukan render halaman edit, sebelum melakukan render, kita mengambil data terlebih dahulu berdasarkan idPegawai dapat diliha pada codingan `router.get('/edit/pegawai/:idPegawai', csrfProtection, function(req, res)` lalu melakukan render ke page edit.
-- `router.post('/update/pegawai/:idPegawai', csrfProtection, function(req, res)` sama seperti method save sebelumya bedanya adalah, disini kita melakukan query terlebih dahulu terhadap Pegawai kemudian kita melakukan update data, dapat dilihat pada codingan `router.post('/update/pegawai/:idPegawai', csrfProtection, function(req, res)`.
-- `router.get('/delete/pegawai/:idPegawai', function(req, res)` merupakan method yang terakhir untuk menghapus sebuah data. Untuk menghapus data dapat dilihat pada `Pegawai.remove({ idPegawai: req.params.idPegawai}, function(err)`.
+- `router.get('/tambah/pegawai')` merupakan kodingan untuk menampilkan halaman tambah data pegawai, disini penulis menggunakan token CSRF :).
+- `router.post('/save/pegawai')` merupakan method untuk menyimpan data pegawai. Untuk menyimpan, kita menggunakan Model yaitu Pegawai akan tetapi kita diharuskan membuat object baru, dapat dilihat di `var pegawai = new Pegawai`. Untuk idPegawai kita membuatnya dengan menggunakan bantuan `node-uuid` sedangkan data lain berdasarkan dari pada form, untuk mengambil data pada form kita menggunakan `req.body.namaTextField`. Jika data tersimpan maka kita akan melakukan redirect ke page awal.
+- method selanjutnya adalah `router.get('/edit/pegawai/:idPegawai'` yang berfungsi untuk melalukan render halaman edit, sebelum melakukan render, kita mengambil data terlebih dahulu berdasarkan idPegawai dapat diliha pada codingan `router.get('/edit/pegawai/:idPegawai'` lalu melakukan render ke page edit.
+- `router.post('/update/pegawai/:idPegawai'` sama seperti method save sebelumya bedanya adalah, disini kita melakukan query terlebih dahulu terhadap Pegawai kemudian kita melakukan update data, dapat dilihat pada codingan `router.post('/update/pegawai/:idPegawai')`.
+- `router.get('/delete/pegawai/:idPegawai)'` merupakan method yang terakhir untuk menghapus sebuah data. Untuk menghapus data dapat dilihat pada `Pegawai.remove({})`.
 
 ##Membuat view
 
@@ -369,7 +369,13 @@ block content
       div.col-xs-6.col-md-4
 {% endhighlight %}
 
-Sama seperti kodingan form biasa, disana kita deklarasikan nama masing - masing input agar dapat dibaca oleh server lalu datanya akan disimpan, disini penulis juga menggunakan CSRF dapat dilihat pada bagian `input(type="hidden", name="_csrf" value="#{csrfToken}")`. Selanjutnya adalah page `edit.jade`.
+Sama seperti kodingan form biasa, disana kita deklarasikan nama masing - masing input agar dapat dibaca oleh server lalu datanya akan disimpan, disini penulis juga menggunakan CSRF dapat dilihat pada bagian
+
+{% highlight jade %}
+input(type="hidden", name="_csrf" value="#{csrfToken}")
+{% endhighlight %}
+
+Selanjutnya adalah page `edit.jade`.
 
 {% highlight jade %}
 extends ./layout.jade
@@ -485,10 +491,10 @@ Page `500.jade` hanya sebagai page yang digunakan jika terjadi error pada aplika
 
 Lumayan panjang :D baiklah, penulis menjelaskan beberapa hal saja.
 
-- `app.set('port', process.env.PORT || 3000);` berfungsi untuk mendeklarasikan aplikasi akan jalan pada port 3000.
-- `app.set('views', path.join(__dirname, 'views'));` berfungsi untuk mendeklarasikan folder view yang akan kita gunakan
+- `app.set('port');` berfungsi untuk mendeklarasikan aplikasi akan jalan pada port 3000.
+- `app.set('views');` berfungsi untuk mendeklarasikan folder view yang akan kita gunakan
 - ` app.set('view engine', 'jade');` berfungsi untuk mendeklarasikan bahwa kita menggunakan jade sebagai template enginenya.
-- ` mongoose.connect('mongodb://localhost/BelajarExpressJS', function(err, res)` untuk melakukan koneksi ke database mongodb
+- ` mongoose.connect()` untuk melakukan koneksi ke database mongodb
 - `var server = http.createServer(app);` berfungsi untuk membuat sebuah server lalu menjalankannya. berbeda dengan php, node js dapat dijalankan dengan menggunakan server yang bersifat embedded artinya ketika menjalankan sebuah server node js, kita tidak perlu mencopy project ke folder htdoc untuk dijalankan akan tetapi cukup menjalankannya di folder project maka aplikasi siap digunakan, konsep ini sama seperti pemrograman web pada java, kita dapat menjalankan web server baik jetty, tomcat maupun wildfly pada folder project dengan bantuan maven plugin.
 
 ##Uji Coba
