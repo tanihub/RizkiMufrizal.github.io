@@ -28,11 +28,15 @@ Berikut merupakan tahapan yang akan kita lakukan untuk membuat project dengan me
 
 Bagi yang belum melakukan instalasi java, silahkan dilihan di [instalasi perlengkapan coding java](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/) Silahkan anda download [android studio](https://developer.android.com/sdk/index.html). Kemudian extract dan install sdk android versi 5.1.1 atau API 22. Setelah selesai, kita akan mulai melakukan path android. Jalankan perintah berkut.
 
-`sudo gedit /etc/environment`
+{% highlight bash %}
+sudo gedit /etc/environment
+{% endhighlight %}
 
 kemudian masukkan variabel berikut pada bagian atas
 
-`ANDROID_HOME=/home/rizki/Android/Sdk`
+{% highlight bash %}
+ANDROID_HOME=/home/rizki/Android/Sdk
+{% endhighlight %}
 
 Sesuaikan dengan directory anda. Kemudian tambahkan pada bagian PATH seperti ini
 
@@ -46,7 +50,9 @@ Silahkan restart komputer anda agar variabel tersebut dapat terbaca di terminal 
 
 Untuk melakukan instalasi ionic, diwajibkan untuk melakukan instalasi node js, bagi yang belum melakukan instalasi node js silahkan lihat di [instalasi perlengkapan coding node JS](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Kemudian jalankan perintah berikut.
 
-`npm install -g cordova ionic`
+{% highlight bash %}
+npm install -g cordova ionic
+{% endhighlight %}
 
 tunggu hingga instalasi selesai.
 
@@ -59,22 +65,30 @@ Setelah selesai instalasi ionic, sekarang saatnya coding :D. sebelumnya berikut 
 
 Jalankan perintah berikut untuk membuat aplikasi android dengan ionic.
 
-`ionic start Belajar-Ionic blank`
+{% highlight bash %}
+ionic start Belajar-Ionic blank
+{% endhighlight %}
 
 artinya kita ingin membuat sebuah aplikasi dengan nama `Belajar-Ionic` dengan menggunakan template 'blank'. Setelah selesai, kemudian masuk ke root folder project dengan menggunakan terminal lalu jalankan perintah berikut.
 
-`ionic platform add android`
+{% highlight bash %}
+ionic platform add android
+{% endhighlight %}
 
 perintah diatas berfungsi untuk mendeklarasikan bahwa kita ingin membuat sebuah aplikasi mobile untuk android. Tunggu hingga hasil download selesai. Setelah selesai, kita coba jalankan dengan perintah.
 
-`ionic run`
+{% highlight bash %}
+ionic run
+{% endhighlight %}
 
 Berikut adalah hasilnya.
 ![Screenshot from 2015-09-24 23:02:16.png](../images/Screenshot from 2015-09-24 23:02:16.png)
 
 sedangkan jika kita ingin melakukan uji coba terlebih dahulu, kita dapat melakukan akses aplikasi melalui browser dengan perintah.
 
-`ionic serve`
+{% highlight bash %}
+ionic serve
+{% endhighlight %}
 
 lalu akses pada `http://localhost:8100/`. Berikut adalah tampilan pada web nya.
 ![Screenshot from 2015-09-24 23:35:09.png](../images/Screenshot from 2015-09-24 23:35:09.png)
@@ -83,7 +97,9 @@ lalu akses pada `http://localhost:8100/`. Berikut adalah tampilan pada web nya.
 
 Tidak seperti android studio, untuk membuat file APK, kita akan menggunakan terminal :D dikarenakan ionic belum memiliki IDE seperti halnya kita melakukan coding android secara native. Masuk ke root folder project lalu jalankan perintah berikut.
 
-`cordova build --release android`
+{% highlight bash %}
+cordova build --release android
+{% endhighlight %}
 
 Tunggu sejenak karena gradle akan melakukan build terhadap aplikasi kita, dan nantinya akan muncul file apk dengan nama `android-release-unsigned.apk` pada folder `platforms/android/build/outputs/apk/`. File apk ini masih belum bisa diinstall di hp dikarenakan belum adanya keystore. Langkah selanjutnya adalah masuk ke folder `platforms/android/build/outputs/apk/` dengan terminal lalu jalankan perintah berikut.
 
@@ -110,7 +126,9 @@ Jika berhasil maka terdapat file `Belajar-Ionic.apk` di dalam folder `platforms/
 ###Install Ke Emulator Android
 Agar dapat melakukan instalasi pada emulator, silahkan jalankan terlebih dahulu emulator anda kemudian masuk ke folder `platforms/android/build/outputs/apk/` lalu install file apk tersebut dengan perintah.
 
-`adb install Belajar-Ionic.apk`
+{% highlight bash %}
+adb install Belajar-Ionic.apk
+{% endhighlight %}
 
 Jika berhasil maka hasilnya seperti ini
 ![Screenshot from 2015-09-24 23:28:06.png](../images/Screenshot from 2015-09-24 23:28:06.png)
@@ -120,13 +138,17 @@ Kemudian cari aplikasi `Belajar-Ionic` pada menu emulator android anda.
 ###Install Ke Device Android
 Silahkan sambungkan HP anda dengan menggunakan kabel data ke komputer anda. Kemudian aktifkan debungging USB pada menu opsi pengembangan. Kemudian lakukan pengecekan device dengan perintah.
 
-`adb devices`
+{% highlight bash %}
+adb devices
+{% endhighlight %}
 
 maka jika device ada akan muncul berdasarkan device anda, berikut contoh device saya.
 ![Screenshot from 2015-09-24 23:31:33.png](../images/Screenshot from 2015-09-24 23:31:33.png)
 
 Kemudian install ke device dengan perintah
 
-`adb install Belajar-Ionic.apk`
+{% highlight bash %}
+adb install Belajar-Ionic.apk
+{% endhighlight %}
 
 Sekian tutorial tentang Belajar Ionic, semoga bermanfaat dan terima kasih :).
