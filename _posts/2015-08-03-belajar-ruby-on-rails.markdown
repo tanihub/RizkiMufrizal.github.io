@@ -235,8 +235,8 @@ Berikut adalah penjelasan tentang codingan diatas.
 
 - `<%= form_for(@buku) do |buku| %>` merupakan sintak ruby, sintak ini berfungsi untuk melakukan render sebuah object `@buku` yang telah di deklarasikan pada controller.
 - `<%= buku.label :ID_Buku %>` berfungsi sebagai label
-- `<%= buku.text_field :idBuku, class:'form-control', type: 'text', placeholder: 'ID Buku' %>` berfungsi sebagai text field yang nantinya dapat diinput oleh user.
-- `<%= buku.submit :Save, class:'btn btn-success' %>` berfungsi sebagai button agar dapat disubmit.
+- `<%= buku.text_field :idBuku %>` berfungsi sebagai text field yang nantinya dapat diinput oleh user.
+- `<%= buku.submit :Save %>` berfungsi sebagai button agar dapat disubmit.
 
 Buatlah file `new.html.erb` dan `edit.html.erb` di dalam folder `app/views/bukus` kemudian masukkan sintak.
 
@@ -334,12 +334,12 @@ Codingan tersebut sama seperti dengan form pada page new dan edit hanya berbeda 
 
 Sedikit penjelasan dari codingan diatas.
 
-- `<%= link_to 'Tambah Data', new_buku_path, class: 'btn btn-default' %>` berfungsi sebagai button tambah data yang akan melakukan redirect page ke new page.
+- `<%= link_to 'Tambah Data' %>` berfungsi sebagai button tambah data yang akan melakukan redirect page ke new page.
 - `@bukus.each do |buku|` berfungsi untuk melakukan render data pada tabel html. `@bukus` merupakan variabel yang terdapat di controller yang berisi data - data buku.
 - `<%= buku.idBuku %>` berfungsi untuk menampilkan data yang berbentuk array ke dalam tabel - tabel html.
-- `<%= link_to 'Detail', buku_path(buku), class: 'btn btn-default' %>` merupakan sebuah button detail untuk menampilkan detail data.
-- `<%= link_to 'Edit', edit_buku_path(buku), class: 'btn btn-success' %>` merupakan sebuah button edit untuk redirect ke page edit.
-- `<%= link_to 'Delete',buku_path(buku), method: :delete, data: {confirm: 'Data Dihapus ? '}, class: 'btn btn-danger' %>` meruapkan sebuah button delete untuk menghapus data. sebelum menghapus akan ada muncuk tampilan info validasi penghapusan data.
+- `<%= link_to 'Detail' %>` merupakan sebuah button detail untuk menampilkan detail data.
+- `<%= link_to 'Edit' %>` merupakan sebuah button edit untuk redirect ke page edit.
+- `<%= link_to 'Delete' %>` meruapkan sebuah button delete untuk menghapus data. sebelum menghapus akan ada muncuk tampilan info validasi penghapusan data.
 
 Akhirnya selesai juga, sekarang kita lakukan testing Berikut tampilan halaman awalnya.
 
