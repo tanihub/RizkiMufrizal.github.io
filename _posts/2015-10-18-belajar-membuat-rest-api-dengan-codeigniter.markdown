@@ -246,7 +246,13 @@ Bisa dilihat bahwa kita melakukan custom terhadap URI tersebut, berikut penjelas
 
 ##Uji Coba REST API
 
-Akhirnya selesai juga :D, Yuks lakukan uji coba REST API dengan [postman](https://www.getpostman.com/). Jalankan server PHP terlebih dahulu dengan cara, masuk ke folder root project dengan terminal lalu jalankan perintah `php -S localhost:8000 -t public/ bin/router.php` dan berikut adalah hasilnya.
+Akhirnya selesai juga :D, Yuks lakukan uji coba REST API dengan [postman](https://www.getpostman.com/). Jalankan server PHP terlebih dahulu dengan cara, masuk ke folder root project dengan terminal lalu jalankan perintah 
+
+{% highlight bash %}
+php -S localhost:8000 -t public/ bin/router.php
+{% endhighlight %}
+
+dan berikut adalah hasilnya.
 
 ![Screenshot from 2015-10-18 10:02:57.png](../images/Screenshot from 2015-10-18 10:02:57.png)
 
