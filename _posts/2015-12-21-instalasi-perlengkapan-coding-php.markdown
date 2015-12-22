@@ -24,7 +24,13 @@ sudo apt-get update
 sudo apt-get install apache2
 {% endhighlight %}
 
-Jika telah selesai, silahkan akses `http://127.0.0.1/` jika berhasil maka akan muncul halaman web tentang web server apache seperti berikut ini.
+Jika telah selesai, silahkan akses 
+
+{% highlight bash %}
+http://127.0.0.1/
+{% endhighlight %}
+
+jika berhasil maka akan muncul halaman web tentang web server apache seperti berikut ini.
 
 ![Screenshot from 2015-12-21 08:07:45.png](../images/Screenshot from 2015-12-21 08:07:45.png)
 
