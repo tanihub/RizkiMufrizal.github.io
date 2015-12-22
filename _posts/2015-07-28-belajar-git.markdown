@@ -25,15 +25,21 @@ Oke kita langsung mulai melakukan konfigurasi git pada linux. Berikut tahapan ya
 
 Tambahkan repository PPA pada linux lewat terminal.
 
-`sudo add-apt-repository ppa:git-core/ppa`
+{% highlight bash %}
+sudo add-apt-repository ppa:git-core/ppa
+{% endhighlight %}
 
 lalu lakukan update
 
-`sudo apt-get update`
+{% highlight bash %}
+sudo apt-get update
+{% endhighlight %}
 
 dan terakhir install git
 
-`sudo apt-get install git`
+{% highlight bash %}
+sudo apt-get install git
+{% endhighlight %}
 
 Instalasi selesai, lalu silahkan bagi yang belum membuat akun, anda dapat melakukan registrasi di [Github](http://github.com). Github ini merupakan sebuah sebuah media social bagi developer, disana kita dapat melakukan upload project, berbagi project dan sebagainya.
 
@@ -49,21 +55,29 @@ git config --global color.ui true
 
 Jangan lupa sesuaikan dengan identitas anda. Langkah selanjutnya adalah kita akan mengenerate ssh key yang nantinya kita butuhkan untuk di upload ke github. ssh key ini menggunakan algoritma rsa sehingga dia mempunyai public dan private key. Untuk mengenerate ssh tersebut jalankan perintah berikut.
 
-`ssh-keygen -t rsa -C "mufrizalrizki@gmail.com"`
+{% highlight bash %}
+ssh-keygen -t rsa -C "mufrizalrizki@gmail.com"
+{% endhighlight %}
 
 Oke selanjutnya kita akan melakukan copy dari isi ssh tersebut untuk github. Install terlebih dahulu `xclip` dengan perintah.
 
-`sudo apt-get install xclip`
+{% highlight bash %}
+sudo apt-get install xclip
+{% endhighlight %}
 
 kemudian copy file ssh dengan perintah
 
-`xclip -sel clip < ~/.ssh/id_rsa.pub`
+{% highlight bash %}
+xclip -sel clip < ~/.ssh/id_rsa.pub
+{% endhighlight %}
 
 Login ke akun gihub, lalu pilih menu `setting` pilih `ssh key` kemudian tambahkan ssh yang tadi kita copykan.
 
 Kemudian untuk mengecek apakah ssh nya telah berhasil maka lakukan perintah berikut.
 
-`ssh -T git@github.com`
+{% highlight bash %}
+ssh -T git@github.com
+{% endhighlight %}
 
 Jika berhasil maka akan tampil seperti dibawah ini.
 
@@ -83,7 +97,9 @@ Untuk melakukan clone repsitory sangat gampang. Pada bagian repository yang ada 
 
 Lalu copy dan clone dengan perintah
 
-`git clone https://github.com/RizkiMufrizal/Belajar-Git.git`
+{% highlight bash %}
+git clone https://github.com/RizkiMufrizal/Belajar-Git.git
+{% endhighlight %}
 
 Sesuaikan dengan repository anda. Kemudian buat sebuah file, disini penulis membuat sebuah file dengan nama `index.md` kemudian masukkan tulisan `hello word`. Kemudian kita dapat melakukan pengecekan status git dengan perintah `git status` dan akan muncul.
 
@@ -123,7 +139,9 @@ Tahap selanjutnya lakukan commit dengan perintah `git commit -m "Tambah file ind
 
 Untuk melakuakn remote sebuah project tidak jauh berbeda dengan clone sebuah project. Setelah membuat project pada github kemudian anda buat sebuah folder sesuai dengan nama project anda di github. Kemudian masuk ke root project dan lakukan inisialisasi git dengan perintah `git init`. Tahap selanjutnya anda lakukan remote dengan perintah
 
-`git remote add origin https://github.com/RizkiMufrizal/Belajar-Git.git`
+{% highlight bash %}
+git remote add origin https://github.com/RizkiMufrizal/Belajar-Git.git
+{% endhighlight %}
 
 Setelah selesai, anda download dulu source code yang sudah ada di github dengan perintah 'git pull origin master' maka akan muncul file `index.md`. Untuk melakukan commit dan push sama seperti perintah sebelumnya.
 
