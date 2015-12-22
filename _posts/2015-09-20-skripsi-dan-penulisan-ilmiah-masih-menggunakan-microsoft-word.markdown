@@ -27,27 +27,27 @@ Untuk pengguna windows silahkan anda download di [LyX](http://www.lyx.org/Downlo
 
 tambahkan repsitory terlebih dahulu.
 
-```
+{% highlight bash %}
 sudo add-apt-repository ppa:lyx-devel/release
-```
+{% endhighlight %}
 
 kemudian lakukan update.
 
-```
+{% highlight bash %}
 sudo apt-get update
-```
+{% endhighlight %}
 
 kemudian install lyx dengan perintah.
 
-```
+{% highlight bash %}
 sudo apt-get install lyx
-```
+{% endhighlight %}
 
 Di linux, belum tersedia bahasa indonesia yang dikenali oleh LyX sehingga kita melakukan instalasi dependencynya dengan perintah.
 
-```
+{% highlight bash %}
 sudo apt-get install texlive-lang-other
-```
+{% endhighlight %}
 
 ##Menggunakan LyX dan Template LyX
 
