@@ -48,7 +48,7 @@ sudo chmod 755 -R /var/www/
 
 Setelah selesai jalankan perintah `nano /var/www/html/info.php` kemudian masukkan codingan berikut ini.
 {% highlight php %}
-<?php phpinfo(); ?>
+<?php phpinfo();
 {% endhighlight %}
 
 kemudian save dengan perintah `ctrl + o` dan keluar dengan perintah `ctrl + x`. Jika sudah, akses `http://127.0.0.1/info.php` pada browser maka akan muncul versi php seperti berikut ini.
