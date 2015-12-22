@@ -95,11 +95,9 @@ Berikut penjelasan dari codingan diatas :
 * `var http = require('http').Server(app);` berfungsi untuk membuat server
 * `var io = require('socket.io')(http);` berfungsi untuk membuat server dengan teknologi websocket
 * `var path = require('path');` berfungsi sebagai path dari aplikasi
-* `app.set('port', process.env.PORT || 3000);` berfungsi untuk deklarasi port dari aplikasi
-* `app.set('views', path.join(__dirname, 'views'));` berfungsi untuk deklarasikan folder view / halaman html
+* `app.set('port', process.env.PORT);` berfungsi untuk deklarasi port dari aplikasi
+* `app.set('views');` berfungsi untuk deklarasikan folder view / halaman html
 * `app.set('view engine', 'jade');` berfungsi untuk mendeklarasikan bahwa kita menggunakan template engine [Jade](http://jade-lang.com/)
-* `app.use(require('express').static(path.join(__dirname, 'public')));` berfungsi untuk mendeklarasikan folder public, di dalam folder ini nantinya terdapat file js, css dan img
-* `app.use(require('express').static(path.join(__dirname, 'bower_components')));` berfungsi untuk mendeklarasikan folder bower_components yang terdapat library untuk kebutuhan client.
 * `app.get('/'` berfungsi untuk melakukan render terhadap file index.jade, ini berfungsi sebagai root halaman dari aplikasi
 * `io.on('connection', function(socket)` berfungsi untuk inisialisasi koneksi dengan websocket
 * `socket.on('chat:pesan', function(pesan)` function ini menunggu event sebuah request dari client, sedangkan `chat:pesan` merupakan perintah socket yang akan dikirim dari client, jika perintah sama maka perintah yang di dalam function ini akan dijalankan. `pesan` yang merupakan parameter dari function diatas berfungsi sebagai data yang dikirim dari client, data dapat berupa object atau array dalam format [JSON](http://www.json.org/).
@@ -204,9 +202,9 @@ Berikut penjelasan singkat dari codingan diatas.
 * `$(document).ready` merupakan deklarasi jquery untuk awal sebuah dokument
 * `$('#kirim').on('click', function()` merupakan deklarasik jquery dengan mengambil sebuah id dengan nama `kirim`, id ini berasal dari sebuah button, kemudian jika ada yang mengirim pesan maka function dibawahnya akan dijalankan.
 * `DataChatKirim.nama = $('#nama').val()` berfungsi untuk mengambil data nama, dapat dilihat bahwa `$('#nama').val()` berfungsi untuk mengambil data yang berasal dari id `nama`.
-* `socket.emit('chat:pesan', DataChatKirim);` berfungsi untuk mengirim data chat ke server melalui websocket
+* `socket.emit('chat:pesan')` berfungsi untuk mengirim data chat ke server melalui websocket
 * `$('#nama').val('');` merupakan perintah jquery untuk menghapus data yang terdapat di dalam form inputan
-* `socket.on('chat:pesan', function(DataChat)` sama seperti pada server, function ini berfungsi untuk menunggu response dari server, jika ada response maka perintah dibawah function ini akan dijalankan.
+* `socket.on('chat:pesan')` sama seperti pada server, function ini berfungsi untuk menunggu response dari server, jika ada response maka perintah dibawah function ini akan dijalankan.
 * `$('#listPesan').prepend()` berfungsi untuk menambah tag `<li>` pada tag `<ul>`, id `listPesan` berasal dari tag `<ul>` sehingga apabila ada chat yang masuk, maka tag `<li>` akan ditambah secara otomatis, ini merupakan salah satu konsep dari JQuery yaitu DOM (data object ).
 
 ##Uji Coba Aplikasi Chat
@@ -237,7 +235,13 @@ bower_components/
 node_modules/
 {% endhighlight %}
 
-Inisialisasi dengan menggunakan perintah `git init`, buatlah sebuat project pada dashboard heroku. Kemudian buka file `package.json` pada bagian `scripts` ganti `test` menjadi `"postinstall": "./node_modules/bower/bin/bower install"` hasilnya seperti ini
+Inisialisasi dengan menggunakan perintah `git init`, buatlah sebuat project pada dashboard heroku. Kemudian buka file `package.json` pada bagian `scripts` ganti `test` menjadi
+
+{% highlight js %}
+"postinstall": "./node_modules/bower/bin/bower install"
+{% endhighlight %}
+
+hasilnya seperti ini
 
 {% highlight js %}
 "scripts": {
