@@ -58,7 +58,7 @@ Dapat disimpulkan bahwa sebuah class adalah representasi dari sebuah tabel dan s
 - MyBatis (Java)
 - JPA (Java)
 - Ebean (Java)
-- Waterline (Node jS / Javascript)
+- Waterline (Node JS / Javascript)
 - Ruby On Rails (Ruby)
 - dan lain - lain
 
