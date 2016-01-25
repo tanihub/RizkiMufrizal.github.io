@@ -49,7 +49,7 @@ sudo apt-get install php7.0-cli php7.0-mysql php7.0-fpm php7.0-gd php7.0 libapac
 Setelah selesai, kita akan melakukan testing terlebih dahulu. Karena htdocs terdapat di dalam folder `/var/www/html/` maka berikan hak akses terlebih dahulu dengan perintah
 
 {% highlight bash %}
-sudo chmod 755 -R /var/www/
+sudo chmod 777 -R /var/www/
 {% endhighlight %}
 
 Setelah selesai jalankan perintah `nano /var/www/html/info.php` kemudian masukkan codingan berikut ini.
