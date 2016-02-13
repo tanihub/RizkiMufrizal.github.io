@@ -18,7 +18,7 @@ Jika anda adalah seorang developert javascript terutama yang udah sering ngoding
 
 Biasanya gulp digunakan untuk melakukan serangkaian kerja seperti membuat minify terhadap file html, css, js, melakukan concat file js, dan sebagainya. Pada artikel kali ini, penulis ingin membahas bagaimana cara penggunaan gulp untuk setup development sebuah project :D.
 
-##Instalasi Gulp
+## Instalasi Gulp
 
 Karena gulp basic nya menggunakan node js maka anda diharuskan melakukan instalasi node js, yang belum melakukan instalasi node js silahkan lihat di [Instalasi Perlengkapan Coding NodeJS](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/).
 
@@ -28,7 +28,7 @@ Untuk melakukan instalasi gulp silahkan jalankan perintah
 npm install -g gulp
 {% endhighlight %}
 
-##Membuat Project
+## Membuat Project
 
 Silahkan buat sebuah folder dimana saja, disini penulis membuat sebuah folder dengan nama `Belajar-Gulp`. Kemudian masuk ke folder tersebut dengan menggunakan terminal. Jalankan perintah berikut ini.
 
@@ -50,7 +50,7 @@ Setelah selesai, tahap selanjutnya adalah kita menentukan list task yang akan ki
 * Task LiveReload
 * Task Clean dan Build
 
-##Task Minify file css, js dan html
+## Task Minify file css, js dan html
 
 Silahkan anda membuat sebuah file di dalam folder tersebut dengan nama `gulpfile.js`. kemudian kita lakukan instalasi library gulp dengan perintah.
 
@@ -58,7 +58,7 @@ Silahkan anda membuat sebuah file di dalam folder tersebut dengan nama `gulpfile
 npm install gulp-htmlmin gulp-uglify gulp-minify-css gulp-concat --save-dev
 {% endhighlight %}
 
-###Minifiy CSS
+### Minifiy CSS
 
 Sama seperti sebelumnya, hanya saja pada minify kita memasukkan plugin minify css.
 
@@ -81,7 +81,7 @@ kemudian jalankan dengan perintah.
 gulp minify-css
 {% endhighlight %}
 
-###Minifiy JS
+### Minifiy JS
 
 Sebelum diminify maka kita lakukan concat terlebih dahulu, berikut adalah codingan untuk concat dan minify
 
@@ -108,7 +108,7 @@ kemudian jalankan dengan perintah.
 gulp minify-js
 {% endhighlight %}
 
-###Minifiy HTML
+### Minifiy HTML
 
 Yang terakhir adalah membuat agar file html menjadi lebih kecil yaitu dengan menggunakan plugin `gulp-htmlmin`, berikut adalah kodingannya.
 
@@ -131,7 +131,7 @@ kemudian jalankan dengan perintah.
 gulp minify-html
 {% endhighlight %}
 
-##Task Server
+## Task Server
 
 Gulp juga menyediakan plugin untuk membuat sebuah server sehingga kita bisa langsung mengubah kodingan html, css dan js tanpa server back end. Silahkan jalankan perintah berikut untuk instalasi librarynya.
 
@@ -171,7 +171,7 @@ maka akan muncul log terminal seperti berikut.
 
 silahkan akses di browser pada `http://localhost:8080`.
 
-##Task Watch
+## Task Watch
 
 Task yang satu ini berfungsi untuk melihat semua aktifitas yang anda kerjakan :D. Fungsi yaitu setiap kali kita melakukan edit sebuah file maka dia akan melakukan task yang lain, misalnya jika kita mengedit file css, js dan html maka dia akan concat dan minify file - file tersebut. Masukkan codingan berikut pada file `gulpfile.js`.
 
@@ -191,7 +191,7 @@ gulp watch
 
 jika anda melakukan perubahan pada file js, css dan html maka dia akan melakukan compile ulang terhadap masing - masing file tersebut.
 
-##Task LiveReload
+## Task LiveReload
 
 Task ini biasanya digunakan ketika kita ingin browser melakukan refresh setiap kali kita mengedit file - file css, js dan html. Silahkan ubah kodingan berikut ini.
 
@@ -250,7 +250,7 @@ gulp
 
 mengapa gulp aja ? dikarenakan kita telah melakukan deklarasi default sehingga gulp akan menjalankan perintah default tersebut. Kemudian akses `http://localhost:8080/` pada browser, ubah salah satu file maka browser akan otomatis melakukan reload.
 
-##Task Clean dan Build
+## Task Clean dan Build
 
 Yang terakhir adalah task clean dan build, biasanya kita gunakan jika kita ingin membuild semua file yang ada. Silahkan instal library seperti berikut.
 
