@@ -5,8 +5,8 @@ reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: http://rizkimufrizal.github.io
-#url:
+#url: http://rizkimufrizal.github.io
+url:
 
 # Owner/author information
 owner:
@@ -30,18 +30,20 @@ owner:
 background: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics: UA-65519283-1
+google_analytics: UA-65519283-1  
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify: B56E20F17096917513DB6E5ADF9AB9AC         
+bing_verify: B56E20F17096917513DB6E5ADF9AB9AC        
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Jakarta
 future:      true
-highlighter: pygments
+highlighter: rouge
 markdown:    kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
 sass:
   sass_dir: _sass
   style: compressed
@@ -57,7 +59,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
+  enable_coderay: false
 
   coderay:
     coderay_line_numbers: nil
@@ -75,9 +77,6 @@ post_layout: post
 page_layout: page
 # Format titles with titlecase?
 titlecase: true
-
-gems :
-  - jekyll-paginate
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
