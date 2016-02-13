@@ -14,7 +14,7 @@ date: 2015-12-21T08:00:12+07:00
 
 Sebelum kita melakukan coding PHP pada linux, kita diharuskan untuk melakukan instalasi PHP untuk kebutuhan coding. Yang kita butuhkan adalah PHP, web server apache, composer dan database. Berikut adalah tahapan untuk instalasi pada linux :).
 
-##Instalasi Apache Web Server
+## Instalasi Apache Web Server
 
 >>[Apache web server](https://httpd.apache.org/) adalah server web yang dapat dijalankan di banyak sistem operasi (Unix, BSD, Linux, Microsoft Windows dan Novell Netware serta platform lainnya) yang berguna untuk melayani dan memfungsikan situs web. Protokol yang digunakan untuk melayani fasilitas web/www ini menggunakan HTTP.
 
@@ -36,7 +36,7 @@ jika berhasil maka akan muncul halaman web tentang web server apache seperti ber
 
 ![Screenshot from 2015-12-21 08:07:45.png](../images/Screenshot from 2015-12-21 08:07:45.png)
 
-##Instalasi PHP
+## Instalasi PHP
 
 >>[PHP](https://secure.php.net/) adalah singkatan dari "PHP: Hypertext Prepocessor", yaitu bahasa pemrograman yang digunakan secara luas untuk penanganan pembuatan dan pengembangan sebuah situs web dan bisa digunakan bersamaan dengan HTML. PHP diciptakan oleh Rasmus Lerdorf pertama kali tahun 1994.
 
@@ -78,7 +78,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies
     with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2015, by Zend Technologies
 {% endhighlight %}
 
-##Instalasi MariaDB
+## Instalasi MariaDB
 
 >>[Mariadb](https://mariadb.org/) adalah produk fork dari [MySQL](https://www.mysql.com/) yang didukung langsung dari community. Sejak diakuisisinya MySQL oleh [Oracle](http://www.oracle.com/) pada September 2010, Monty Program sebagai penulis awal kode sumber MySQL memisahkan diri dari pengembangan dan membuat versi yang lebih sendiri yakni MariaDB.
 
@@ -104,7 +104,7 @@ Jika instalasi telah selesai, anda dapat mengakses mariadb dengan perintah
 mysql -u root -p
 {% endhighlight %}
 
-##Instalasi PhpMyAdmin
+## Instalasi PhpMyAdmin
 
 >>[phpMyAdmin](https://www.phpmyadmin.net/) adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL. phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perijinan (permissions), dan lain-lain).
 
@@ -124,7 +124,7 @@ sudo service apache2 restart
 
 kemudian akses kembali phpmyadmin anda :).
 
-##Instalasi Composer
+## Instalasi Composer
 
 Tahap selanjutnya kita akan melakukan instalasi [Composer](https://getcomposer.org/). apa itu composer ?
 

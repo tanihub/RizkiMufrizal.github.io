@@ -26,7 +26,7 @@ Berikut merupakan tahapan yang akan kita lakukan untuk membuat project dengan me
 - Membuat File APK
 - Instalasi File APK Ke Device Android
 
-##Instalasi Android
+## Instalasi Android
 
 Bagi yang belum melakukan instalasi java, silahkan dilihan di [instalasi perlengkapan coding java](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/) Silahkan anda download [android studio](https://developer.android.com/sdk/index.html). Kemudian extract dan install sdk android versi 5.1.1 atau API 22. Setelah selesai, kita akan mulai melakukan path android. Jalankan perintah berkut.
 
@@ -48,7 +48,7 @@ PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/u
 
 Silahkan restart komputer anda agar variabel tersebut dapat terbaca di terminal anda.
 
-##Instalasi Ionic
+## Instalasi Ionic
 
 Untuk melakukan instalasi ionic, diwajibkan untuk melakukan instalasi node js, bagi yang belum melakukan instalasi node js silahkan lihat di [instalasi perlengkapan coding node JS](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Kemudian jalankan perintah berikut.
 
@@ -58,7 +58,7 @@ npm install -g cordova ionic
 
 tunggu hingga instalasi selesai.
 
-##Membuat Sebuah Aplikasi Android
+## Membuat Sebuah Aplikasi Android
 
 Setelah selesai instalasi ionic, sekarang saatnya coding :D. sebelumnya berikut adalah syarat untuk coding ionic.
 
@@ -95,7 +95,7 @@ ionic serve
 lalu akses pada `http://localhost:8100/`. Berikut adalah tampilan pada web nya.
 ![Screenshot from 2015-09-24 23:35:09.png](../images/Screenshot from 2015-09-24 23:35:09.png)
 
-##Membuat File APK
+## Membuat File APK
 
 Tidak seperti android studio, untuk membuat file APK, kita akan menggunakan terminal :D dikarenakan ionic belum memiliki IDE seperti halnya kita melakukan coding android secara native. Masuk ke root folder project lalu jalankan perintah berikut.
 
@@ -123,9 +123,9 @@ Tahap selanjutnya adalah silahkan anda download [zipaligner](https://github.com/
 
 Jika berhasil maka terdapat file `Belajar-Ionic.apk` di dalam folder `platforms/android/build/outputs/apk/`.
 
-##Instalasi File APK Ke Device Android
+## Instalasi File APK Ke Device Android
 
-###Install Ke Emulator Android
+### Install Ke Emulator Android
 Agar dapat melakukan instalasi pada emulator, silahkan jalankan terlebih dahulu emulator anda kemudian masuk ke folder `platforms/android/build/outputs/apk/` lalu install file apk tersebut dengan perintah.
 
 {% highlight bash %}
@@ -137,7 +137,7 @@ Jika berhasil maka hasilnya seperti ini
 
 Kemudian cari aplikasi `Belajar-Ionic` pada menu emulator android anda.
 
-###Install Ke Device Android
+### Install Ke Device Android
 Silahkan sambungkan HP anda dengan menggunakan kabel data ke komputer anda. Kemudian aktifkan debungging USB pada menu opsi pengembangan. Kemudian lakukan pengecekan device dengan perintah.
 
 {% highlight bash %}

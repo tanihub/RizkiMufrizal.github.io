@@ -14,7 +14,7 @@ date: 2015-07-23T11:35:10+07:00
 
 Setelah melakukan banyak [konfigurasi untuk coding java](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/), selanjutnya kita akan belajar tentang framework hibernate. Sebelum kita belajar hibernate, alangkah baiknya kita mengenal terlebih dahulu konsep dari hibernate itu sendiri.
 
-##Object Relational Mapping (ORM)
+## Object Relational Mapping (ORM)
 
 >Object Relational Mapping atau lebih sering disebut ORM adalah sebuah konsep dimana sebuah object merupakan representasi dari basis data yang berbasis relational.
 
@@ -66,7 +66,7 @@ Dapat disimpulkan bahwa sebuah class adalah representasi dari sebuah tabel dan s
 
 Setelah mengenal konsep ORM, selanjutnya kita akan menggunakan framework hibernate.
 
-##Generate Project Hibernate
+## Generate Project Hibernate
 
 Untuk membuat project hibernate, kita menggunakan maven. Buka terminal lalu jalankan perintah berikut untuk membuat project dengan maven
 

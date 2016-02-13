@@ -14,7 +14,7 @@ date: 2015-08-03T07:36:10+07:00
 
 Tutorial kali ini akan membahas tentang salah satu framework ruby yaitu [ruby on rails](http://rubyonrails.org/) atau sering disebut dengan ROR. Banyak yang mengambil struktur project dari ruby on rails beberapa diantaranya seperti [play framework](https://www.playframework.com/) (scala/java), [Spring Roo](http://projects.spring.io/spring-roo/) (java) dan [sails](http://sailsjs.org/) (node js). Salah satu kelebihan ruby on rails adalah framework ini sudah support dengan teknologi ORM, untuk penjelasan ORM ada di tutorial [belajar hibernate](http://rizkimufrizal.github.io/belajar-hibernate/). Tidak hanya fitur ORM, akan tetapi framework ini dilengkapi dengan dokumentasi yang lengkap serta komunitas framework yang paling banyak di dalam bahasa pemrograman ruby. Baiklah lets coding ruby with ruby on rails :D.
 
-##Instalasi Ruby On Rails
+## Instalasi Ruby On Rails
 
 Untuk melakukan instalasi ruby on rails, kita menggunakan [gem](https://rubygems.org/). Bagi yang belum melakukan instalasi ruby, dapat dilihat pada tutorial [instalasi ruby](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-ruby/). [Gem](https://rubygems.org/) ini ibarat NPM di dalam node js. Bingung dengan NPM ? pada tutorial selanjutnya akan ada postingan tentang node js. Untuk melakukan instalasi ruby on rails pada linux jalankan perintah berikut.
 
@@ -24,7 +24,7 @@ gem install rails
 
 tunggu hingga instalasi selesai, biasanya memakan waktu sedikit dikarenakan butuh banyak dependency dan jangan lupa hidupakan internet anda.
 
-##Generate Project Ruby On Rails
+## Generate Project Ruby On Rails
 
 Untuk membuat project Ruby On rails sangatlah gampang, jalankan perintah berikut.
 

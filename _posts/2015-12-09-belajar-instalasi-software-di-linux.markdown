@@ -14,7 +14,7 @@ date: 2015-12-09T18:32:13+07:00
 
 Akhir - akhir ini, linux sudah banyak digunakan terutama mahasiswa yang suka ngoprek hal baru. Akan tetapi terdapat kendala diantara user windows yang migrasi ke linux yaitu masalah instalasi software. Tidak hanya di kalangan orang awam, bahkan mahasiswa juga mengalami hal yang serupa. Jika pada windows kita hanya klik pada file `setup` lalu tinggal klik tombol `next` dan `finish` selesai, hal ini berbeda dengan linux, bagaimana caranya ? sebelum kita membahas cara instalasi linux, penulis akan terlebih dahulu membahas tentang management package di dalam linux karena management package merupakan hal dasar yang harus dimengerti oleh seorang linux user :D.
 
-##Package Management Pada Linux
+## Package Management Pada Linux
 
 Setiap distro linux memiliki `package management` yang berbeda - beda. Apa itu `Distro linux` ?
 
@@ -49,7 +49,7 @@ Dari pengertian diatas dapat kita simpulkan bahwa package management setiap dist
 
 Bisa dilihat bahwa distro ubuntu merupakan turunan dari distro debian sehingga package management yang akan digunakan oleh ubuntu akan sama seperti pada debian. Begitu pula halnya seperti distro ubuntu mate, kubuntu dan lain sebagainya. `Package management` yang terdapat pada keluarga debian yaitu `apt-get`, `apt-get` merupakan `package management` yang terdapat pada keluarga debian, salah satu fungsinya adalah mempermudah user dalam mencari dependency yang dibutuhkan oleh sebuah aplikasi, misalnya penulis ingin melakukan instalasi aplikasi `daftar barang`, nah aplikasi ini membutuhkan aplikasi lain untuk bisa jalan misalnya dia membutuhkan `gcc` maka secara otomatis `package management` akan mencari dependency yang dibutuhkan oleh aplikasi tersebut. `apt-get` sebenarnya adalah sebuah front end sedangkan back end nya adalah `dpkg` yang akan melakukan instalasi software. Bedanya apa ? bedanya adalah `apt-get` dapat mencari dependency sebuah aplikasi sedangkan `dpkg` tidak dapat mencari dependency tetapi `dpkg` hanya bertugas untuk melakukan instalasi sebuah aplikasi.
 
-##Instalasi Software Dengan Package Management (apt-get)
+## Instalasi Software Dengan Package Management (apt-get)
 
 Setelah mengetahui bagaimana package management pada keluarga debian, selanjutnya kita akan melakukan instalasi sebuah aplikasi. Misalnya disini penulis ingin melakukan instalasi software sticky notes pada ubuntu. Untuk melakukan instalasi sticky notes kita membutuhkan yang namanya `PPA`.
 
@@ -97,7 +97,7 @@ Jika berhasil maka sticky notes akan terinstall dan diterminal anda akan muncul 
 
 ![Screenshot from 2015-12-10 09:45:16.png](../images/Screenshot from 2015-12-10 09:45:16.png)
 
-##Instalasi Software Dengan dpkg (Debian Package Manager)
+## Instalasi Software Dengan dpkg (Debian Package Manager)
 
 Sebelumnya kita melakukan instalasi dengan menggunakan `apt-get` nah kali ini kita akan menggunakan fungsi `dpkg` untuk melakukan instalasi software. Syarat yang dibutuhkan untuk instalasi software dengan menggunakan dpkg adalah kita diharuskan mendownload file executable dengan extensi `.deb`. Misalnya penulis ingin melakukan instalasi sofware `mysql workbench`, silahkan anda download terlebih dahulu di [Mysql Workbench](https://dev.mysql.com/downloads/workbench/) jangan lupa sesuaikan dengan versi ubuntu anda.
 
@@ -135,7 +135,7 @@ Lalu ketik huruf `y` dan tekan `enter` maka dia akan mendownload dependency libr
 
 ![Screenshot from 2015-12-10 10:16:50.png](../images/Screenshot from 2015-12-10 10:16:50.png)
 
-##Uninstall Software
+## Uninstall Software
 
 Setelah mengetahui bagaimana instalasi software, maka langkah selanjutnya adalah bagaimana cara uninstall software. Ada 2 cara, berikut adalah bentuk umumnya.
 
@@ -159,7 +159,7 @@ maka hasil akhirnya adalah seperti berikut ini.
 
 ![Screenshot from 2015-12-10 10:31:50.png](../images/Screenshot from 2015-12-10 10:31:50.png)
 
-##Membuat Shortcut Software
+## Membuat Shortcut Software
 
 Bagaimana membuat shortcut pada ubuntu jika software tersebut tidak perlu diinstall seperti Eclipse, IntelliJ IDEA, Spring Tool Suite, dan Andoid Studio ? kita bisa menggunakan aplikasi lain untuk membuat shortcut aplikasi tersebut. Silahkan jalankan perintah berikut.
 

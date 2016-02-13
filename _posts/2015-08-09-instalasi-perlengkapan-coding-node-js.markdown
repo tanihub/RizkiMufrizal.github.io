@@ -34,7 +34,7 @@ Baiklah kita akan memulai bagaimana instalasi node js pada linux. Sebelum melaku
 - Instalasi dan konfigurasi Node JS
 - Latihan Sekilas Tentang Node JS
 
-##Clone NVM
+## Clone NVM
 
 Langkah selanjutnya adalah melakukan instalasi [NVM](https://github.com/creationix/nvm). Jika pada [instalasi ruby](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-ruby/) kita mengenal dengan [RVM(ruby version manager)](https://rvm.io/) maka pada node js juga terdapat [NVM(node version manager)](https://github.com/creationix/nvm). Bedanya adalah pada NVM kita harus melakukan clone repository NVM dengan menggunakan version control git. Untuk melakukan clone, jalankan perintah berikut.
 
@@ -47,7 +47,7 @@ git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git check
 
 NVM telah di clone pada folder .nvm, untuk melihat folder tersebut pada linux, kita harus tampilkan terlebih dahulu dengan perintah `ctrl + H` dikarenakan folder tersebut bersifat hidden.
 
-##Instalasi dan konfigurasi Node JS
+## Instalasi dan konfigurasi Node JS
 
 Kemudian kita akan melakukan PATH terhadap nvm. Jalankan perintah berikut.
 
@@ -135,7 +135,7 @@ npm --version
 
 {% endhighlight %}
 
-##Latihan Sekilas Tentang Node JS
+## Latihan Sekilas Tentang Node JS
 
 Setelah perjalanan panjang instalasi node js, kita mulai belajar sedikit bagaimana menggunakan node js :D. Buatlah sebuah folder untuk project kita, jika lewat terminal dengan perintah `mkdir BelajarNodeJS`. Kemudian buat sebuah file javascript dengan nama `app.js`, kemudian masukkan codingan berikut.
 
@@ -158,7 +158,7 @@ Sintak diatas berfungsi untuk membuat sebuah server, kemudian kita menampilkan t
 node app.js
 {% endhighlight %}
 
-###Instalasi Nodemon
+### Instalasi Nodemon
 
 Untuk mempermudah pengembangan aplikasi, kita membutuhkan server yang bisa autoreload ketika developer mengubah source code. Salah satu tool yang mendukung tersebut adalah dengan menggunakan [Nodemon](http://nodemon.io/). Untuk melakukan instalasi cukup dengan menggunakan perintah.
 
@@ -174,7 +174,7 @@ nodemon app.js
 
 Salah satu kelebihan nodemon adalah dapat menjalankan source code dalam bentuk [coffee script](http://coffeescript.org/) dan terdapat fitur autoreload server. Coba anda ganti source code tanpa mematikan server, kemudian di save maka nodemon akan melakukan reload server.
 
-###Instalasi Bower
+### Instalasi Bower
 
 Bower merupakan sebuah tool yang digunakan untuk melakukan manajemen kelengkapan library web seperti js, css dan img. Bower mirip dengan npm, bedanya adalah npm lebih di khususkan untuk manajemen kelengkapan library javascript. Baiklah untuk melakukan instalasi bower dapat dilakukan dengan perintah.
 

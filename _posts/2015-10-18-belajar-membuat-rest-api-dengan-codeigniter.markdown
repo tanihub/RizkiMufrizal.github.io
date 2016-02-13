@@ -27,7 +27,7 @@ Berikut merupakan tahapan yang akan kita kerjakan pada saat development REST API
 * Tahap Development REST API
 * Uji Coba REST API
 
-##Membuat Database
+## Membuat Database
 
 Oke setelah semua persiapan PHP selesai, kita mulai coding :D. Yang pertama kali kita buat adalah sebuah database beserta tabel dan columnnya. Silahkan buat sebuah database dengan nama `akademik` kemudian jalankan codingan berikut untuk membuat tabel dan columnnya.
 
@@ -41,7 +41,7 @@ create table mahasiswa(
 ) Engine=InnoDB;
 {% endhighlight %}
 
-##Membuat Dan Setting Project CodeIgniter
+## Membuat Dan Setting Project CodeIgniter
 
 Setelah selesai dengan database selanjutnya kita akan mulai membuat project codeigniter dengan composer. Jalankan perintah berikut :
 
@@ -65,7 +65,7 @@ $autoload['helper'] = array();
 $autoload['helper'] = array('url');
 {% endhighlight %}
 
-###Menghilangkan index.php Pada URI (Uniform Resource Identifier)
+### Menghilangkan index.php Pada URI (Uniform Resource Identifier)
 
 Jika anda tidak ingin menggunakan index.php pada URI (Uniform Resource Identifier) maka buka file `config.php` di dalam folder `application/config/` berikut perubahannya
 
@@ -81,7 +81,7 @@ $config['index_page'] = 'index.php';
 $config['index_page'] = '';
 {% endhighlight %}
 
-##Tahap Development REST API
+## Tahap Development REST API
 
 Silahkan buka file `database.php` di dalam folder `application/config/` kemudian isi konfigurasi seperti username, password, database dan hostnamenya. Oke karena codeigniter merupakan sebuah framework MVC (Model View Controller) maka kita akan mulai coding dari model. Buat sebuah file `Mahasiswa.php` di dalam folder `application/models/` dan berikut isi codingannya.
 
@@ -246,7 +246,7 @@ Bisa dilihat bahwa kita melakukan custom terhadap URI tersebut, berikut penjelas
 * `api/mahasiswa/(:any)[PUT]` berfungsi untuk memperbarui data, karena memperbarui data, URI ini mempunyai sebuah parameter `npm`, data yang dikirim dalam bentuk JSON dan menggunakan method PUT pada protokol HTTP.
 * `api/mahasiswa/(:any)[DELETE]` berfungsi untuk menghapus data mahasiswa menggunakan method DELETE pada protokol HTTP dan juga menggunakan parameter npm.
 
-##Uji Coba REST API
+## Uji Coba REST API
 
 Akhirnya selesai juga :D, Yuks lakukan uji coba REST API dengan [postman](https://www.getpostman.com/). Jalankan server PHP terlebih dahulu dengan cara, masuk ke folder root project dengan terminal lalu jalankan perintah 
 

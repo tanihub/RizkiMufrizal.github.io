@@ -23,7 +23,7 @@ Oke kita langsung mulai melakukan konfigurasi git pada linux. Berikut tahapan ya
 - Buat repository baru dan belajar commit
 - Penjelasan Gitignore
 
-##Instalasi Git dan Buat Akun Github
+## Instalasi Git dan Buat Akun Github
 
 Tambahkan repository PPA pada linux lewat terminal.
 
@@ -45,7 +45,7 @@ sudo apt-get install git
 
 Instalasi selesai, lalu silahkan bagi yang belum membuat akun, anda dapat melakukan registrasi di [Github](http://github.com). Github ini merupakan sebuah sebuah media social bagi developer, disana kita dapat melakukan upload project, berbagi project dan sebagainya.
 
-##Konfigurasi Git
+## Konfigurasi Git
 
 Setelah tahap instalasi, selanjutnya kita akan melakukan konfigurasi git. Konfigurasi pertama yaitu melakukan setting global konfigurasi pada git. Jalankan perintah berikut.
 
@@ -87,11 +87,11 @@ Jika berhasil maka akan tampil seperti dibawah ini.
 Hi Rizki Mufrizal! You've successfully authenticated, but Github does not provide shell access
 {% endhighlight %}
 
-##Buat repository baru dan belajar commit
+## Buat repository baru dan belajar commit
 
 Untuk membuat repository di gitub, silahkan anda login dan buat sebuah repository. Penulis membuat repository dengan nama `Belajar-Git` Jika sudah, anda dapat melakukan clone repository atau melakukan remote repository tersebut pada komputer anda.
 
-###Melakukan Clone dan commit project
+### Melakukan Clone dan commit project
 
 Untuk melakukan clone repsitory sangat gampang. Pada bagian repository yang ada di github terdapat bagian url yang dapat kita copy yaitu ada pada bagian ini.
 
@@ -137,7 +137,7 @@ Changes to be committed:
 
 Tahap selanjutnya lakukan commit dengan perintah `git commit -m "Tambah file index.md"`. Message atau pesan tersebut dapat diganti sesuia dengan keinginan anda. Kemudian upload semua file tersebut ke github dengan cara menggunakan perintah `git push origin master`, git akan meminta username dan password anda. Jika telah selesai, lihat repository github anda, dan disana telah terdapat file `index.md`.
 
-###Melakukan Remote dan commit project
+### Melakukan Remote dan commit project
 
 Untuk melakuakn remote sebuah project tidak jauh berbeda dengan clone sebuah project. Setelah membuat project pada github kemudian anda buat sebuah folder sesuai dengan nama project anda di github. Kemudian masuk ke root project dan lakukan inisialisasi git dengan perintah `git init`. Tahap selanjutnya anda lakukan remote dengan perintah
 
@@ -147,7 +147,7 @@ git remote add origin https://github.com/RizkiMufrizal/Belajar-Git.git
 
 Setelah selesai, anda download dulu source code yang sudah ada di github dengan perintah 'git pull origin master' maka akan muncul file `index.md`. Untuk melakukan commit dan push sama seperti perintah sebelumnya.
 
-##Penjelasan Gitignore
+## Penjelasan Gitignore
 
 Gitignore merupakan sebuah file yang berfungsi untuk mendeklarasikan file - file apa saja yang tidak akan di commit. File gitignore biasanya ditulis dengan nama `.gitignore`, file ini bersifat hidden sehingga untuk menampilkannya, kita harus melakukan perintah `ctrl + H`. Misalnya jika kita membuat project java dengan menggunakan maven, maka akan muncul folder `target` yang berisi kompalasi program maka folder tersebut kita daftarkan pada gitignore sehingga tidak akan di commit. Untuk mengetahui file apa saja yang yang di daftarkan pada gitignore untuk setiap bahasa pemrograman, anda dapat melihatnya di [repository gitignore](https://github.com/github/gitignore). 
 

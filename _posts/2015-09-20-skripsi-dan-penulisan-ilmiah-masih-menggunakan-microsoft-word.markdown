@@ -23,7 +23,7 @@ Kebanyakan mahasiswa masih menggunakan microsoft word untuk mengerjakan skripsi 
 
 Trus bagaimana mengatasinya ? untuk soal penulisan ada beberapa tool yang disarankan, diantaranya adalah dengan menggunakan [LaTeX](https://www.latex-project.org/) dan [Markdown](https://en.wikipedia.org/wiki/Markdown). Diantara 2 tool tersebut, LaTeX merupakan salah satu tool yang paling banyak digunakan dalam bidang akademik sedangkan markdown lebih ke arah pembuatan ebook dan dokumentasi. Untuk penulisan skripsi dan penulisan ilmiah kita gunakan LaTex saja, tapi tunggu bukankah LaTeX itu diharuskan kita untuk coding secara manual ? yups tapi jangan khawatir karena ada sebuah tool lagi yang mirip fungsinya seperti microsoft word yaitu [LyX](http://www.lyx.org/).
 
-##Instalasi LyX
+## Instalasi LyX
 
 Untuk pengguna windows silahkan anda download di [LyX](http://www.lyx.org/Download) sedangkan pengguna linux, kita akan menggunakan terminal.
 
@@ -51,33 +51,36 @@ Di linux, belum tersedia bahasa indonesia yang dikenali oleh LyX sehingga kita m
 sudo apt-get install texlive-lang-other
 {% endhighlight %}
 
-##Menggunakan LyX dan Template LyX
+## Menggunakan LyX dan Template LyX
 
 Silahkan download template LyX pada repository github saya di [TemplatePenulisanLyX](https://github.com/RizkiMufrizal/TemplatePenulisanLyX) kemudian buka file yang berektensi `.lyx` misalnya disini saya membuka template skripsi. maka hasilnya seperti ini.
 ![Screenshot from 2015-09-20 14:57:16.png](../images/Screenshot from 2015-09-20 14:57:16.png)
 
-###Mengganti Nama Penulis, Dosen Pembimbing Dst
+### Mengganti Nama Penulis, Dosen Pembimbing Dst
 
 - Klik menu document lalu pilih settings
 - lalu pilih menu LaTex Preamble
 - Anda dapat mengganti nama, nama dosen pembimbing, kajur, dan lain sebaginya. Berikut contoh gambarnya
 ![Screenshot from 2015-09-20 15:01:05.png](../images/Screenshot from 2015-09-20 15:01:05.png)
 
-###Membuat Table
+### Membuat Table
+
 - Klik menu insert lalu pilih float lalu pilih table
 - maka dibuatkan sebuah frame beserta tabel yang keberapa, silahkan anda isi nama tabel tersebut
 - Untuk memasukkan tabel, klik insert lalu pilih table, anda dapat memilih berapa kolom dan berapa baris.
 - Untuk membuat agar tabel di tengah, klik kanan di dalam frame tabel lalu pilih paragraft setting lalu pilih center. Berikut merupakan hasilnya.
 ![Screenshot from 2015-09-20 15:07:19.png](../images/Screenshot from 2015-09-20 15:07:19.png)
 
-###Memasukkan Gambar
+### Memasukkan Gambar
+
 - Klik menu insert lalu pilih float lalu pilih figure
 - maka dibuatkan sebuah frame beserta gambar yang keberapa, silahkan anda isi nama gambar tersebut
 - Untuk memasukkan tabel, klik insert lalu pilih Graphics, lalu pilih browse, cari gambar anda dan tekan oke.
 - Untuk membuat agar gambar di tengah, klik kanan di dalam frame gambar lalu pilih paragraft setting lalu pilih center. Berikut merupakan hasilnya.
 ![Screenshot from 2015-09-20 15:10:35.png](../images/Screenshot from 2015-09-20 15:10:35.png)
 
-###Membuat Kutipan
+### Membuat Kutipan
+
 - Cari kalimat yang merupakan kutipan
 - Kemudian pindahkan kursor pada akhir kalimat dikarenakan kutipan ada di akhir
 - Pilih menu insert dan pilih citation
@@ -85,7 +88,8 @@ Silahkan download template LyX pada repository github saya di [TemplatePenulisan
 - Kemudian klik oke, maka akan muncul kutipan tersebut. Berikut adalah gambarnya.
 ![Screenshot from 2015-09-20 15:17:01.png](../images/Screenshot from 2015-09-20 15:17:01.png)
 
-###Membuat Daftar Pustaka
+### Membuat Daftar Pustaka
+
 - Download terlebih dahulu [Jabef](http://jabref.sourceforge.net/) yang digunakan untuk memasukkan daftar isi
 - Jabref bersifat portable sehingga dapat langsung dibuka
 - Buka jabref, pilih menu file lalu pilih open database, pilih file `biblio.bib` maka tampilannya akan seperti ini.
@@ -99,7 +103,8 @@ Silahkan download template LyX pada repository github saya di [TemplatePenulisan
 - Tahap terakhir adalah melakukan setting daftar pustaka pada LyX, Buka pada halaman akhir, terdapat tulisan `BibTex generated bibliography` klik tulisan tersebut maka akan muncul sebuah pop up. Pada bagian style pilih `apalike`. Ini Merupakan format Model Harvard/APA, kemudian pilih oke dan berikut hasil akhirnya.
 ![Screenshot from 2015-09-20 15:32:54.png](../images/Screenshot from 2015-09-20 15:32:54.png)
 
-###konversi ke PDF
+### konversi ke PDF
+
 Untuk mendapatkan penulisan yang rapi, LyX dapat mengubah penulisan LaTeX menjadi pdf sehingga dapat dibuka di komputer mana pun. Untuk melakukan konversi dengan menggunakan tombol `ctrl + R`
 
 Demikian tutorial singkat mengenai penulisan skripsi dan penulisan ilmiah, Semoga menjadi bahan pertimbangan ketika anda menulis dan terima kasih :).

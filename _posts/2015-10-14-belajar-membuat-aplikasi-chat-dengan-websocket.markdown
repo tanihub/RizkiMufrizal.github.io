@@ -41,7 +41,7 @@ Berikut tahapan yang akan kita lakukan.
 * Uji Coba Aplikasi Chat
 * Deploy Aplikasi ke Heroku
 
-##Setup Kebutuhan Server
+## Setup Kebutuhan Server
 
 Seperti biasa, buat sebuah folder dengan nama `Belajar-WebSocket-Socket.IO` kemudian masuk ke folder tersebut dengan terminal. Jalankan perintah `npm init` lalu input data anda sesuai dengan yang diminta. Kita membutuhkan beberapa library dan framework untuk membuat websocket, maka jalankan perintah berikut.
 
@@ -49,7 +49,7 @@ Seperti biasa, buat sebuah folder dengan nama `Belajar-WebSocket-Socket.IO` kemu
 npm install express jade socket.io --save
 {% endhighlight %}
 
-##Setup Kebutuhan Client
+## Setup Kebutuhan Client
 
 Jalankan perintah `bower init`, sama seperti `npm init` input data sesuai dengan yang diminta. Pada tutorial ini, kita akan menggunakan material design, maka memerlukan beberapa library. Jalankn perintah berikut.
 
@@ -57,7 +57,7 @@ Jalankan perintah `bower init`, sama seperti `npm init` input data sesuai dengan
 bower install bootstrap-material-design bootstrap socket.io-client --save
 {% endhighlight %}
 
-##Membuat Server WebSocket Dengan Socket.IO
+## Membuat Server WebSocket Dengan Socket.IO
 
 Buatlah sebuah file `app.js` di dalam root folder project. Berikut adalah codingan untuk servernya.
 
@@ -108,7 +108,7 @@ Berikut penjelasan dari codingan diatas :
 
 Panjang juga penjelasannya :D , sekarang kita mulai coding untuk bagian clientnya.
 
-##Membuat Client WebSocket Dengan Socket.IO Dan Material Design
+## Membuat Client WebSocket Dengan Socket.IO Dan Material Design
 
 Untuk client, kali ini kita akan gunakan material design, loh knp gx pakai bootstrap aja ? alasannya penulis pengen nyobain material design :P . Bosen kan kalau terus - terusan pakai bootstrap, sekali - kali pakai material design biar bagus tampilannya. Oke silahkan buat sebuah folder views di dalam root folder project. buat file `layout.jade` di dalam folder views, `layout.jade` berfungsi sebagai layout utama sehingga kita akan lakukan import js, css, img dan lain - lain disini. Berikut kodingannya.
 
@@ -209,7 +209,7 @@ Berikut penjelasan singkat dari codingan diatas.
 * `socket.on('chat:pesan')` sama seperti pada server, function ini berfungsi untuk menunggu response dari server, jika ada response maka perintah dibawah function ini akan dijalankan.
 * `$('#listPesan').prepend()` berfungsi untuk menambah tag `<li>` pada tag `<ul>`, id `listPesan` berasal dari tag `<ul>` sehingga apabila ada chat yang masuk, maka tag `<li>` akan ditambah secara otomatis, ini merupakan salah satu konsep dari JQuery yaitu DOM (data object ).
 
-##Uji Coba Aplikasi Chat
+## Uji Coba Aplikasi Chat
 
 Silahkan jalankan aplikasi dengan perintah `nodemon app.js` atau `node app.js` kemudian hit pada browser dengan url `http://localhost:3000/` kemudian buka 2 browser lakukan chat. Berikut adalah hasilnya pada saat anda chat.
 
@@ -219,7 +219,7 @@ Berikut tampilan list chat
 
 ![Screenshot from 2015-10-14 13:56:37.png](../images/Screenshot from 2015-10-14 13:56:37.png)
 
-##Deploy Aplikasi ke Heroku
+## Deploy Aplikasi ke Heroku
 
 Heroku merupakan hosting gratis untuk percobaan aplikasi, heroku mendukung beberapa bahasa pemrograman diantaranya adalah javascript, disini node js sebagai javascript yang jalan pada bagian server. Silahkan daftar di [Heroku](https://www.heroku.com/
 ) kemudian jangan lupa setting key ssh anda.

@@ -23,11 +23,11 @@ Halaman blog pada jekyll dibuat dengan format markdown. Markdown adalah sebuah b
 - Generate sebuah blog dengan jekyll
 - Hosting blog ke github page
 
-##Instalasi Jekyll
+## Instalasi Jekyll
 
 Instalasi jekyll sangat lah mudah, buka terminal atau tekan `ctrl + T` lalu jalankan perintah `gem install jekyll`. Jangan lupa hubungkan ke jaringan internet dan tunggu hingga instalasi selesai.
 
-##Generate Blog Dengan Jekyll
+## Generate Blog Dengan Jekyll
 
 Jekyll memiliki fitur scaffolding untuk mengenerate sebuah blog. Jalankan perintah `jekyll new NamaBlogAnda`, kali ini penulis membuat blog dengan nama `BelajarJekyll`, sesuaikan dengan nama blog anda. Jika penulisan jalankan maka perintahnya menjadi `jekyll new BelajarJekyll`. Masuk ke root folder lalu jalankan servernya dengan perintah `jekyll serve` lalu hit ke browser pada `http://127.0.0.1:4000/`. Berikut adalah gambar ketika server dijalankan.
 
@@ -243,7 +243,7 @@ cara penggunaanya adalah ganti pada bagian kata `java`.
 
 lihat aturan diatas dan sesuaikan dengan ektensi masing - masing file.
 
-##Hosting blog ke github page
+## Hosting blog ke github page
 
 Github page merupakan salah satu hosting gratis. Salah satu kelebihannya adalah kita dapat menggunakan jekyll pada github page tersebut. Bagi yang terbiasa dengan menggunakan version control git maka tidak lah susah untuk melakukan deploy ke github page, tidak seperti melakukan deploy ke open shift yang memerlukan banyak konfigurasi. Untuk melakukan deploy web, anda hanya perlu melakukan.
 

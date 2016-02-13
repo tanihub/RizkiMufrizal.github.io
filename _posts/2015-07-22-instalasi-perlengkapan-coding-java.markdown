@@ -20,7 +20,7 @@ Untuk melakukan coding java, ada beberapa hal yang harus kita lakukan dintaranya
 
 Pada tutorial ini, penulis hanya menjelaskan bagaimana instalasi pada sistem operasi linux, penulis mengunakan salah distro linux yaitu ubuntu.
 
-##Instalasi JDK
+## Instalasi JDK
 Untuk melakukan instalasi pada ubuntu, tambahkan repository PPA berikut dengan menggunakan terminal
 
 {% highlight bash %}
@@ -40,7 +40,7 @@ jika update telah selesai, maka lakukan instalasi dengan perintah
 sudo apt-get install oracle-java8-installer
 {% endhighlight %}
 
-##Instalasi build tool java
+## Instalasi build tool java
 
 Di dalam bahasa pemrograman java ada beberapa build tool diantaranya adalah
 
@@ -77,7 +77,7 @@ java -version
 mvn -version
 {% endhighlight %}
 
-##Instalasi IDE
+## Instalasi IDE
 
 Terdapat beberapa IDE yang sering digunakan oleh developer java diantaranya adalah
 
@@ -89,11 +89,11 @@ Terdapat beberapa IDE yang sering digunakan oleh developer java diantaranya adal
 
 Download NetBeans pada [NetBeans](https://netbeans.org/), lalu beri akses eksekusi dengan perintah `chmod a+x netbeans.sh`. jalankan dengan perintah `./netbeans` maka akan muncul GUI instalasi netbeans.
 
-###Instalasi Eclipse
+### Instalasi Eclipse
 
 Silahkan download pada [Eclipse](http://www.eclipse.org/), ekstrak folder tersebut lalu beri akses eksekusi dengan perintah `chmod a+x eclipse.sh`. dan jalankan eclipse dengan perintah `./eclipse`. Untuk memudahkan, maka buatlah shortcut untuk IDE tersebut.
 
-###Instalasi IntelliJ IDEA
+### Instalasi IntelliJ IDEA
 
 Download IDE tersebut pada [IntelliJ IDEA](https://www.jetbrains.com/idea/), lalu ekstrak pada folder tertentu. Di dalam folder tersebut terdapat folder bin yang di dalamnya terdapat file `idea.sh`, beri akses eksekusi dengan perintah `chmod a+x idea.sh` lalu jalankan file tersebut dengan perintah `./idea.sh` Secara otomatis IDE tersebut akan membuat shortcut pada linux anda.
 

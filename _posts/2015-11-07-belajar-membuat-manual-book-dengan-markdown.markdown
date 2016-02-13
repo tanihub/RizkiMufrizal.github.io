@@ -28,7 +28,7 @@ Mengapa menggunakan `markdown` ? berikut beberapa alasannya.
 * Sintak highlighting
 * Auto generate daftar isi
 
-##Instalasi Pandoc
+## Instalasi Pandoc
 
 Untuk melakukan instalasi silahkan jalankan perintah berikut.
 
@@ -36,15 +36,15 @@ Untuk melakukan instalasi silahkan jalankan perintah berikut.
 sudo apt-get install pandoc texlive-latex-base texlive-xetex latex-beamer
 {% endhighlight %}
 
-##Download Template Manual Book
+## Download Template Manual Book
 
 Silahkan download terlebih dahulu [template manual book markdown](https://github.com/RizkiMufrizal/Manual-Book-Markdown). Di dalam template tersebut terdapat beberapa file yaitu `01-teori.md`,`02-perancangan.md` dan lain - lain berfungsi mewakili dari masing - masing bab, misalnya `01-teori.md` mewakili dari bab 1 dan sebagainya.
 
-##Cara Penggunaan Template
+## Cara Penggunaan Template
 
 Silahkan buka template yang telah anda download dengan menggunakan editor anda misalnya dengan sublime, atom dan sebagainya. File yang akan kita ubah adalah file markdown dan latex.
 
-###Mengubah Cover Manual Book
+### Mengubah Cover Manual Book
 
 Silahkan buka file `template-penulisan.tex` lalu cari pada bagian 
 
@@ -66,7 +66,7 @@ Silahkan ubah sesuai dengan biodata anda. Setelah selesai, silahkan buka file `0
 
 ![Screenshot from 2015-11-06 22:08:02.png](../images/Screenshot from 2015-11-06 22:08:02.png)
 
-###Penulisan Section
+### Penulisan Section
 
 Untuk menulis section dan subsection gunakan `#` berikut adalah contohnya :
 {% highlight text %}
@@ -85,7 +85,7 @@ Berikut adalah contoh hasilnya
 
 ![Screenshot from 2015-11-06 21:55:41.png](../images/Screenshot from 2015-11-06 21:55:41.png)
 
-###Penulisan Highlighting
+### Penulisan Highlighting
 
 Salah Satu kelebihan markdown adalah sintak highlighting, untuk membuat sintak highlighting kita dapat menggunakan perintah berikut
 
@@ -105,7 +105,7 @@ Anda tinggal mengubah tulisan `java` dengan bahasa pemrograman yang akan anda gu
 
 ![Screenshot from 2015-11-06 21:58:33.png](../images/Screenshot from 2015-11-06 21:58:33.png)
 
-###Menyisipkan Gambar
+### Menyisipkan Gambar
 
 Markdown juga dapat menyisipankan yaitu melalui perintah LaTeX seperti berikut.
 
@@ -119,7 +119,7 @@ Arti kodingan diatas kita akan memasukkan sebuah gambar yang berada pada folder 
 
 ![Screenshot from 2015-11-06 22:00:21.png](../images/Screenshot from 2015-11-06 22:00:21.png)
 
-###Penulisan URL (Uniform Resource Locator)
+### Penulisan URL (Uniform Resource Locator)
 
 Markdown juga mendukung penulisan URL sebuah situs. Berikut adalah contohnya.
 
@@ -133,7 +133,7 @@ Diantara tanda `[]` kita dapat menyisipkan deskripsi dari pada URL tersebut seda
 
 ![Screenshot from 2015-11-06 22:03:30.png](../images/Screenshot from 2015-11-06 22:03:30.png)
 
-###Penulisn List Dan Nomor
+### Penulisn List Dan Nomor
 
 Untuk menulis list atau penomoran kita dapat melakukannya dengan mudah. Berikut adalah sintak untuk menulis list.
 
@@ -169,7 +169,7 @@ dapat dilihat bahwa penulisan untuk list dapat dilakukan dengan beberapa karakte
 {% endraw %}
 {% endhighlight %}
 
-##Convert Markdown Menjadi PDF
+## Convert Markdown Menjadi PDF
 
 Langkah terakhir adalah mengubah markdown menjadi pdf. Silahkan jalankan perintah berikut.
 

@@ -23,7 +23,7 @@ Berikut merupakan tahapan untuk membuat sebuah aplikasi dengan node js :
 - Membuat view
 - Uji Coba
 
-##Initialisasi Project Node JS
+## Initialisasi Project Node JS
 
 Kita mulai dengan membuat sebuah folder aplikasi, disini penulis memberi nama folder dengan `Belajar-ExpressJS` kemudian masuk ke folder dengan menggunakan terminal. Jalankan perintah `npm init` kemudian masukkan inputan sesuai dengan anda inginkan. Jika berhasil maka akan dibuatkan sebuah file yaitu `package.json` sebagai konfigurasi project node js. Langkah selanjutnya adalah kita memerlukan banyak dependency library diantaranya seperti express, mongoose, jade dan lain - lain. Untuk melakukan instalasi dependency tersebut jalankan perintah berikut :
 {% highlight bash %}
@@ -46,7 +46,7 @@ Berikut merupakan list dari library diatas :
 - serve-favicon : digunakan untuk favicon atau icon sebuah web
 - winston : digunakan sebagai library log aplikasi
 
-##Initialisasi dependency Library dengan bower
+## Initialisasi dependency Library dengan bower
 
 Setelah konfigurasi project node js, selanjutnya kita ingin download dependency library untuk front end. Jalanakn perintah `bower init` lalu masukkan inputan lagi dan akan digenerate sebuah file `bower.json` yang merupakan file konfigurasi bower. Jalankan perintah berikut untuk instalasi dependency library bootstrap dan jquery :
 
@@ -54,7 +54,7 @@ Setelah konfigurasi project node js, selanjutnya kita ingin download dependency 
 bower install jquery bootstrap --save
 {% endhighlight %}
 
-##Membuat model
+## Membuat model
 
 Framework express mendukung pattern MVC (model view controller) sama halnya seperti framework lain seperti [Ruby On Rails](http://rubyonrails.org/){:target="_blank"} dan [Spring Framework](https://spring.io/){:target="_blank"}. Buat sebuah folder models lalu buat sebuah file `Pegawai.js`. Berikut merupakan codingan dari file `Pegawai.js`.
 
@@ -98,7 +98,7 @@ Berikut penjelasan singkat tentang codingan diatas :
 - collection : merupakan definisi dari pada collection pada mongodb, jika pada database RDBMS (SQL) kita mengenalnya dengan table. Silahkan pelajari lebih lanjut mengenai database MongoDB :).
 - module.exports : merupakan kodingan untuk melakukan export variabel pegawai, sehingga variabel pegawai dapat diakses oleh file javascript yang lainnya.
 
-##Membuat Router
+## Membuat Router
 
 Router merupakan sebuah controller, hanya saja dari penamaannya saja. Developer express lebih suka menyebutkan router sehingga disini penulis menggunakan dengan nama router. Sebelum kita membuat router, penulis membuat sebuah konfigurasi untuk log sebuah aplikasi. Buat 3 folder dengan nama `routes`, `utils` dan `logs` dan buat sebuah file dengan nama `logger.js` di dalam folder `utils`. Berikut adalah kodingan dari `logger.js`.
 
@@ -273,7 +273,7 @@ Berikut merupakan penjelasan singkat :
 - `router.post('/update/pegawai/:idPegawai'` sama seperti method save sebelumya bedanya adalah, disini kita melakukan query terlebih dahulu terhadap Pegawai kemudian kita melakukan update data, dapat dilihat pada codingan `router.post('/update/pegawai/:idPegawai')`.
 - `router.get('/delete/pegawai/:idPegawai)'` merupakan method yang terakhir untuk menghapus sebuah data. Untuk menghapus data dapat dilihat pada `Pegawai.remove({})`.
 
-##Membuat view
+## Membuat view
 
 Tahap selanjutnya adalah membuat view, silahkan buat folder `views` kemudian buat 5 file di dalam folder tersebut yaitu `layout.jade`, `index.jade`, `tambah.jade`, `edit.jade` dan `500.jade`. Berikut adalah kodingan untuk `layout.jade`.
 
@@ -499,7 +499,7 @@ Lumayan panjang :D baiklah, penulis menjelaskan beberapa hal saja.
 - ` mongoose.connect()` untuk melakukan koneksi ke database mongodb
 - `var server = http.createServer(app);` berfungsi untuk membuat sebuah server lalu menjalankannya. berbeda dengan php, node js dapat dijalankan dengan menggunakan server yang bersifat embedded artinya ketika menjalankan sebuah server node js, kita tidak perlu mencopy project ke folder htdoc untuk dijalankan akan tetapi cukup menjalankannya di folder project maka aplikasi siap digunakan, konsep ini sama seperti pemrograman web pada java, kita dapat menjalankan web server baik jetty, tomcat maupun wildfly pada folder project dengan bantuan maven plugin.
 
-##Uji Coba
+## Uji Coba
 
 Akhirnya selesai juga, kita lakukan uji coba, jalankan aplikasi dengan menggunakan nodemon dengan perintah `nodemon app.js` maka hasilnya seperti ini.
 
