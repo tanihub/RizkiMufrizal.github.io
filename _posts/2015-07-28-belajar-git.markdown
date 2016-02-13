@@ -3,12 +3,13 @@ layout: post
 title: Belajar Git
 modified:
 categories:
-excerpt:
+description: belajar git pada linux
 tags: [git, belajar git, github, clone, commit, add, push, pull, clone, gitignore, repository]
 image:
   background: abstract-3.png
-date: 2015-07-28T18:14:04+07:00
 comments: true
+share: true
+date: 2015-07-28T18:14:04+07:00
 ---
 
 Untuk kerja team sebuah project, kita butuh tool untuk melakukan manajemen project. Dahulu biasanya penulis menggunakan [svn](https://subversion.apache.org/) untuk version control system (VCS), kali ini kita akan menggunakan teknologi baru dari version control system (VCS) yaitu [git](https://git-scm.com/).

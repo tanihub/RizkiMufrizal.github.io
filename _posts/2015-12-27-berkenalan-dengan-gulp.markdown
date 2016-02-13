@@ -3,12 +3,13 @@ layout: post
 title: Berkenalan Dengan Gulp
 modified:
 categories: 
-excerpt:
+description: belajar dan berkenalan dengan gulp
 tags: [gulp, gulp html, gulp css, gulp js]
 image:
   background: abstract-3.png
-date: 2015-12-27T11:30:20+07:00
 comments: true
+share: true
+date: 2015-12-27T11:30:20+07:00
 ---
 
 Jika anda adalah seorang developert javascript terutama yang udah sering ngoding di node js pasti udah tidak asing lagi dengan yang namanya [gulp](http://gulpjs.com/) :D.

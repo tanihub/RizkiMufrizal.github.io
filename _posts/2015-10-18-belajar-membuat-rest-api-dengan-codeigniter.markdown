@@ -3,12 +3,13 @@ layout: post
 title: Belajar Membuat REST API Dengan CodeIgniter
 modified:
 categories:
-excerpt:
+description: belajar membuat REST API dengan codeigniter
 tags: [REST API, REST, API, codeigniter, php]
 image:
   background: abstract-3.png
-date: 2015-10-18T10:21:28+07:00
 comments: true
+share: true
+date: 2015-10-18T10:21:28+07:00
 ---
 
 Jika kita bicara mengenai web pasti tidak terlepas dari bahasa pemrograman PHP, mengapa demikian ? dikarenakan PHP merupakan bahasa pemrograman yang sangat banyak digunakan untuk membuat sebuah web secara dinamis. Tidak hanya banyak digunakan, bahkan laboratorium teknik informatika di universitas gunadarma juga terdapat sebuah mata praktikum pemrograman web yang dikhususkan untuk tingkat 4 yang berfungsi menambah ilmu pengetahuan mahasiswa mengenai pemrograman berbasis web dengan menggunakan PHP. Salah satu framework yang akan digunakan adalah [CodeIgniter](https://codeigniter.com/).

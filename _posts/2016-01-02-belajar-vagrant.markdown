@@ -3,12 +3,13 @@ layout: post
 title: Belajar Vagrant
 modified:
 categories: 
-excerpt:
+description: belajar instalasi dan konfigurasi vagrant
 tags: [vagrant, linux, virtual box]
 image:
   background: abstract-3.png
-date: 2016-01-02T07:31:24+07:00
 comments: true
+share: true
+date: 2016-01-02T07:31:24+07:00
 ---
 
 Ketika kita melakukan development terhadap sebuah aplikasi terkadang kita membutuhkan tool - tool penting untuk membantu pada developer untuk membuat sebuah aplikasi. Ada beberapa masalah yang sering ditemui oleh seorang developer diantaranya adalah :

@@ -3,12 +3,13 @@ layout: post
 title: Belajar Express JS
 modified:
 categories:
-excerpt:
+description: belajar framework express js
 tags: [express js, belajar express js, mongodb, mongoose, jade]
 image:
   background: abstract-3.png
-date: 2015-09-20T13:42:58+07:00
 comments: true
+share: true
+date: 2015-09-20T13:42:58+07:00
 ---
 
 Pada [tutorial sebelumnya](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/){:target="_blank"} penulis telah membahas bagaimana cara instalasi untuk coding node js. Kali ini kita akan belajar bagaimana membagun sebuah aplikasi berbasis node js.

@@ -3,12 +3,13 @@ layout: post
 title: Skripsi Dan Penulisan Ilmiah Masih Menggunakan Microsoft Word ???
 modified:
 categories:
-excerpt:
+description: belajar menulis tulisan ilmiah dengan lyx
 tags: [lyx, latex, microsoft word, google scholar, jabref, skripsi, penulisan ilmiah]
 image:
   background: abstract-3.png
-date: 2015-09-20T15:40:45+07:00
 comments: true
+share: true
+date: 2015-09-20T15:40:45+07:00
 ---
 
 Kebanyakan mahasiswa masih menggunakan microsoft word untuk mengerjakan skripsi dan penulisan ilmiah. Microsoft word memang salah satu tool yang sangat populer untuk kegiatan menulis dan lain sebagainya. Tapi tahu kah anda bahwa menulis sebuah skripsi dan penulisan ilmiah merupakan pekerjaan yang sangat merepotkan jika menggunakan microsoft word ? bagaimana bisa ? baiklah, penulis akan menjelaskan mengapa microsoft word dapat merepotkan anda untuk menulis ?

@@ -3,12 +3,13 @@ layout: post
 title: Belajar Framework Spring
 modified:
 categories:
-excerpt:
+description: belajar framework spring
 tags: [framework, spring, belajar spring, dependecy injection, inversion of control]
 image:
   background: abstract-3.png
-date: 2015-08-10T17:39:00+07:00
 comments: true
+share: true
+date: 2015-08-10T17:39:00+07:00
 ---
 
 Setelah mempelajari sedikit tentang [framework hibernate](http://rizkimufrizal.github.io/belajar-hibernate), kali ini kita akan belajar tentang framework [spring](https://spring.io/). Apa itu spring ?

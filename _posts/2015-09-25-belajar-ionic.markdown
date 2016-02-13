@@ -3,12 +3,13 @@ layout: post
 title: Belajar Ionic
 modified:
 categories:
-excerpt:
+description: belajar ionic
 tags: [belajar ionic, ionic, android, apk, hybrid]
 image:
   background: abstract-3.png
-date: 2015-09-25T06:49:11+07:00
 comments: true
+share: true
+date: 2015-09-25T06:49:11+07:00
 ---
 
 Beberapa tahun kebelakang, android merupakan sebuah teknologi yang sangat pesat berkembang. Seiring berkembanganya teknologi, para developer mulai banyak mengembangkan aplikasi - aplikasi berbasis android baik secara native maupun hybrid. Kali ini kita akan mencoba membuat sebuah aplikasi android dengan menggunakan teknologi ionic.

@@ -3,12 +3,13 @@ layout: post
 title: Belajar Membuat Manual Book Dengan Markdown
 modified:
 categories: 
-excerpt:
+description: belajar membuat manual book dengan markdown
 tags: [manual book, markdown, pandoc]
 image:
   background: abstract-3.png
-date: 2015-11-07T07:22:31+07:00
 comments: true
+share: true
+date: 2015-11-07T07:22:31+07:00
 ---
 
 Beberapa praktikum yang terdapat pada Laboratorium Teknik Informatika mempunyai tugas membuat project seperti mata praktikum pemrograman web, grafkom, pengantar kecerdasan buatan dan lain sebagainya. Masing - masing project diwajibkan membuat manual book tentang project yang dikerjakan. Pada artikel kali ini, penulis mengajak anda untuk membuat manual book dengan berbagai teknologi open source :D. Teknologi yang akan kita gunakan adalah

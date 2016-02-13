@@ -3,12 +3,13 @@ layout: post
 title: Konfigurasi Reverse Proxy Pada Nginx
 modified:
 categories: 
-excerpt:
+description: belajar konfigurasi reverse proxy pada nginx
 tags: [nginx, reverse proxy, proxy]
 image:
   background: abstract-3.png
-date: 2016-01-03T11:15:23+07:00
 comments: true
+share: true
+date: 2016-01-03T11:15:23+07:00
 ---
 
 Sebelum kita membuat konfigurasi reverse proxy, ada baiknya kita membahas sekilas tentang proxy :).

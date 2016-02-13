@@ -3,12 +3,13 @@ layout: post
 title: Instalasi Perlengkapan Coding Ruby
 modified:
 categories:
-excerpt:
+description: instalasi perlengkapan ruby pada linux
 tags: [ruby, instalasi ruby, ruby on rails, sinatra, rvm, rubymine]
 image:
   background: abstract-3.png
-date: 2015-07-27T07:06:33+07:00
 comments: true
+share: true
+date: 2015-07-27T07:06:33+07:00
 ---
 
 Sebelumnya kita pernah membahas tentang bagaimana [instalasi java pada linux](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/). Kali ini penulis akan menjelaskan bagaimana instalasi ruby pada linux.

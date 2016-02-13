@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Instalasi Perlengkapan Coding PHP"
+title: Instalasi Perlengkapan Coding PHP
 modified:
 categories: 
-excerpt:
+description: instalasi perlengkapan php untuk coding php
 tags: [coding php, php, apache, mariadb, phpmyadmin, composer]
 image:
   background: abstract-3.png
-date: 2015-12-21T08:00:12+07:00
 comments: true
+share: true
+date: 2015-12-21T08:00:12+07:00
 ---
 
 Sebelum kita melakukan coding PHP pada linux, kita diharuskan untuk melakukan instalasi PHP untuk kebutuhan coding. Yang kita butuhkan adalah PHP, web server apache, composer dan database. Berikut adalah tahapan untuk instalasi pada linux :).

@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Belajar Instalasi Software Di Linux"
+title: Belajar Instalasi Software Di Linux
 modified:
 categories: 
-excerpt:
+description: belajar cara instalasi software pada linux
 tags: [linux, software, install, ubuntu, distro linux, package management, ppa]
 image:
   background: abstract-3.png
-date: 2015-12-09T18:32:13+07:00
 comments: true
+share: true
+date: 2015-12-09T18:32:13+07:00
 ---
 
 Akhir - akhir ini, linux sudah banyak digunakan terutama mahasiswa yang suka ngoprek hal baru. Akan tetapi terdapat kendala diantara user windows yang migrasi ke linux yaitu masalah instalasi software. Tidak hanya di kalangan orang awam, bahkan mahasiswa juga mengalami hal yang serupa. Jika pada windows kita hanya klik pada file `setup` lalu tinggal klik tombol `next` dan `finish` selesai, hal ini berbeda dengan linux, bagaimana caranya ? sebelum kita membahas cara instalasi linux, penulis akan terlebih dahulu membahas tentang management package di dalam linux karena management package merupakan hal dasar yang harus dimengerti oleh seorang linux user :D.

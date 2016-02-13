@@ -3,12 +3,13 @@ layout: post
 title: Yuks Membuat Aplikasi RESTful Web Service Dengan Spring MVC Dan Hibernate
 modified:
 categories:
-excerpt:
+description: belajar membuat aplikasi RESTful web service dengan spring mvc dan hibernate
 tags: [spring mvc, hibernate, rest, restful, web service, json, xml, http]
 image:
   background: abstract-3.png
-date: 2015-09-27T21:48:49+07:00
 comments: true
+share: true
+date: 2015-09-27T21:48:49+07:00
 ---
 
 Kali ini penulis ingin mengajak anda untuk membuat sebuah aplikasi RESTful Web Service dengan menggunakan teknologi Spring MVC dan Hibernate.

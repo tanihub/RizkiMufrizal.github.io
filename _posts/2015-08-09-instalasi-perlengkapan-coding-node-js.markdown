@@ -3,12 +3,13 @@ layout: post
 title: Instalasi Perlengkapan Coding Node JS
 modified:
 categories:
-excerpt:
+description: instalasi perlengkapan node js pada linux
 tags: [node js, sails, express js, instalasi node js, nvm, bower, coffee-script, nodemon]
 image:
   background: abstract-3.png
-date: 2015-08-09T16:45:24+07:00
 comments: true
+share: true
+date: 2015-08-09T16:45:24+07:00
 ---
 
 Perkembangan teknologi sangat pesat hingga menghasilkan berbagai teknologi. Diantaranya adalah berkembangannya bahasa pemrograman javascript. Javascript biasanya hanya berkerja pada bagian front end sebuah project akan tetapi pada hari ini, javascript telah dapat bekerja di bagian back end (server side) sebuah project. Javascript yang dapat jalan pada bagian server side adalah node js.

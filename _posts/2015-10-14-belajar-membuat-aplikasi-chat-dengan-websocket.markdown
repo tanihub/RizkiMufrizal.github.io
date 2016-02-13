@@ -3,12 +3,13 @@ layout: post
 title: Belajar Membuat Aplikasi Chat Dengan WebSocket
 modified:
 categories:
-excerpt:
+description: belajar membuat aplikasi chat dengan websocket menggunakan node js
 tags: [chat, web socket, ajax, aplikasi chat, node js, express js, socket.io]
 image:
   background: abstract-3.png
-date: 2015-10-14T15:43:18+07:00
 comments: true
+share: true
+date: 2015-10-14T15:43:18+07:00
 ---
 
 Yups kali ini kita akan mencoba membuat sebuah aplikasi chat :D dengan menggunakan teknologi WebSocket. Apa itu WebSocket ?

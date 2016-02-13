@@ -3,12 +3,13 @@ layout: post
 title: Belajar Hibernate
 modified:
 categories:
-excerpt:
+description: belajar hibernate
 tags: [hibernate, orm, object relational mapping, belajar hibernate]
 image:
   background: abstract-3.png
-date: 2015-07-23T11:35:10+07:00
 comments: true
+share: true
+date: 2015-07-23T11:35:10+07:00
 ---
 
 Setelah melakukan banyak [konfigurasi untuk coding java](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/), selanjutnya kita akan belajar tentang framework hibernate. Sebelum kita belajar hibernate, alangkah baiknya kita mengenal terlebih dahulu konsep dari hibernate itu sendiri.

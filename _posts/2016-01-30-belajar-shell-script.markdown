@@ -3,12 +3,13 @@ layout: post
 title: Belajar Shell Script
 modified:
 categories: 
-excerpt:
+description: belajar shell script pada linux
 tags: [shell, shell script, linux, bash]
 image:
   background: abstract-3.png
-date: 2016-01-30T17:16:48+07:00
 comments: true
+share: true
+date: 2016-01-30T17:16:48+07:00
 ---
 
 Berhubung penulis sedang membuat konfigurasi dan instalasi aplikasi pada ubuntu dengan menggunakan bahasa shell maka pada artikel ini, penulis akan membahas sedikit tentang shell script :D. Sebelum penulis membahas tentang shell, alangkah baiknya kita membahas sedikit teori tentang shell.

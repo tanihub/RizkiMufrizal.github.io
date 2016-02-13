@@ -3,12 +3,13 @@ layout: post
 title: Belajar Membuat Blog Dengan Jekyll
 modified:
 categories:
-excerpt:
+description: belajar membuat blog dengan jekyll
 tags: [blog, jekyll, membuat blog dengan jekyll, jekyll blog]
 image:
   background: abstract-3.png
-date: 2015-07-31T19:38:00+07:00
 comments: true
+share: true
+date: 2015-07-31T19:38:00+07:00
 ---
 
 Zaman sekarang banyak banget blog yang ditawarkan dalam bantuk cms seperti blogspot, wordpress dan sebagainya. Akan tetapi ada salah satu tool yang dapat kita gunakan untuk membuat blog tanpa menggunakan cms yaitu [Jekyll](http://jekyllrb.com/).
