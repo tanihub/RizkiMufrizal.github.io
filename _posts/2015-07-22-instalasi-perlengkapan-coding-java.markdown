@@ -3,12 +3,13 @@ layout: post
 title: Instalasi Perlengkapan Coding Java
 modified:
 categories:
-excerpt:
+description: instalasi java pada linux
 tags: [instalasi java, maven, ant, gradle, sbt, java, netbeans, eclipse, intellij idea, instalasi java di ubuntu]
 image:
   background: abstract-3.png
-date: 2015-07-22T21:08:21+07:00
 comments: true
+share: true
+date: 2015-07-22T21:08:21+07:00
 ---
 
 Untuk melakukan coding java, ada beberapa hal yang harus kita lakukan dintaranya adalah
