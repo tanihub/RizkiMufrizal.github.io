@@ -85,7 +85,7 @@ Terdapat beberapa IDE yang sering digunakan oleh developer java diantaranya adal
 - [Eclipse](http://www.eclipse.org/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
-###Instalasi NetBeans
+### Instalasi NetBeans
 
 Download NetBeans pada [NetBeans](https://netbeans.org/), lalu beri akses eksekusi dengan perintah `chmod a+x netbeans.sh`. jalankan dengan perintah `./netbeans` maka akan muncul GUI instalasi netbeans.
 
