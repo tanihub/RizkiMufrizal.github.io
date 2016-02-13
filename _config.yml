@@ -38,7 +38,7 @@ bing_verify: B56E20F17096917513DB6E5ADF9AB9AC
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Jakarta
 future:      true
-highlighter: rouge
+highlighter: pygments
 markdown:    kramdown
 gems:
   - jekyll-sitemap
@@ -52,15 +52,14 @@ permalink:   /:categories/:title/
 # Amount of post to show on home page
 paginate: 5
 
-syntax_highlighter: coderay
-
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
+  use_coderay: true
 
-  syntax_highlighter_opts:
+  coderay:
     coderay_line_numbers: nil
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
