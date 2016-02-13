@@ -14,7 +14,7 @@ date: 2016-01-03T11:15:23+07:00
 
 Sebelum kita membuat konfigurasi reverse proxy, ada baiknya kita membahas sekilas tentang proxy :).
 
-##Apa Itu Proxy Server ?
+## Apa Itu Proxy Server ?
 
 >>Proxy Server adalah sebuah server yang menyediakan layanan perantara antara client host dengan server lain.
 
@@ -24,7 +24,7 @@ Berikut adalah gambaran umum dari proxy server
 
 Dari gambar diatas dapat dilihat bahwa sebenarnya user atau client melakukan akses terhadap proxy server, selanjutnya proxy server akan meneruskan akses ke server yang dituju. Biasanya proxy server digunakan sebagai cache, keamanan, load balancing dan lain sebagainya.
 
-##Apa Itu Reverse Proxy ?
+## Apa Itu Reverse Proxy ?
 
 >>Reverse Proxy adalah salah satu jenis dari proxy, biasanya reverse proxy digunakan sebagai perantara antara client dengan web server.
 
@@ -34,7 +34,7 @@ Berikut adalah arsitektur dari reverse proxy.
 
 Dari gambar diatas dapat dilihat bahwa sebuah proxy dapat menghandle beberapa web server. Adapun cara kerjanya adalah client akan melakukan akses terhadap sebuah URL misalnya [https://www.google.co.id](https://www.google.co.id/) maka secara otomatis client akan melakukan request terlebih dahulu ke proxy server akan tetapi seolah - olah client melakukan request langsung ke web server. Setelah menerima request dari client, maka proxy server akan meneruskan request tersebut ke web server yang dituju. Untuk mempermudah pemahaman langsung saja kita melakukan setting reverse proxy pada nginx :D.
 
-##Setup Vagrant
+## Setup Vagrant
 
 Pada artikel kali ini, penulis akan menggunakan vagrant. Bagi yang belum tau apa itu vagrant, silahkan lihat di [Belajar Vagrant](http://rizkimufrizal.github.io/belajar-vagrant/). Pada kesempatan kali ini, penulis menggunakan box [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) atau ubuntu 14.04 LTS.
 
@@ -67,7 +67,7 @@ Vagrant.configure(2) do |config|
 end
 {% endhighlight %}
 
-##Membuat File Executable Shell
+## Membuat File Executable Shell
 
 File ini dibuat berfungsi sebagai provisioning pada vagrant, silahkan buat sebuah file `install.sh` kemudian isikan codingan seperti berikut.
 
@@ -136,7 +136,7 @@ echo "jalankan server"
 nodemon app.js
 {% endhighlight %}
 
-##Membuat Konfigurasi Reverse Proxy Nginx
+## Membuat Konfigurasi Reverse Proxy Nginx
 
 Langkah selanjutnya adalah silahkan anda buat sebuah folder `config`, di dalam folder tersebut silahkan buat sebuah file `nginx-proxy`. Kemudian isikan codingan berikut pada file tersebut.
 
@@ -154,7 +154,7 @@ server {
 }
 {% endhighlight %}
 
-##Konfigurasi Repository Dan Environment
+## Konfigurasi Repository Dan Environment
 
 Karena kita menggunakan ubuntu, maka tahap selanjutnya kita melakukan konfigurasi repository dan environment pada ubuntu. Untuk konfigurasi repository, kita akan menggunakan repository [kambing ui](http://kambing.ui.ac.id/). Silahkan buat sebuah file `sources.list` kemudian isikan codingan berikut.
 
@@ -173,7 +173,7 @@ LC_CTYPE="en_US.UTF-8"
 LC_ALL="en_US.UTF-8"
 {% endhighlight %}
 
-##Membuat Aplikasi Web Node JS
+## Membuat Aplikasi Web Node JS
 
 Semua konfigurasi untuk bagian nginx telah disiapkan, langkah terakhir adalah membuat sebuah aplikasi web dengan node js yang berfungsi sebagai server side sedangkan nginx berfungsi sebagai reverse proxy. Silahkan buat sebuah file `app.js` di dalam folder `config` kemudian isikan codingan node js seperti berikut ini.
 
@@ -197,7 +197,7 @@ http.createServer(function (req, res) {
 console.log('Server jalan di http://127.0.0.1:3000/');
 {% endhighlight %}
 
-##Arsitektur Reverse Proxy
+## Arsitektur Reverse Proxy
 
 Arsitektur reverse proxy yang akan digunakan adalah sebagai berikut.
 
@@ -227,7 +227,7 @@ service nginx restart
 
 Dari codingan diatas dapat bahwa kita mencopy file `nginx-proxy` dari folder `/vagrant/config/` ke dalam folder `/etc/nginx/sites-available/`. Kemudian tahap selanjutnya kita melakukan symlink dari file `reverseproxy` ke dalam folder `/etc/nginx/sites-enabled/`.
 
-##Testing Reverse Proxy
+## Testing Reverse Proxy
 
 Tahap terakhir yaitu melakukan testing reverse proxy. Silahkan masuk ke folder `ubuntu-nginx-reverse-proxy` melalui terminal lalu jalankan perintah berikut.
 

@@ -26,7 +26,7 @@ Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan 
 
 Ketika ingin melakukan duplikasi atau dibagikan kepada team developer yang lain maka kita tinggal menggunakan perintah vagrant sehingga secara otomatis vagrant akan melakukan konfigurasi pada PC masing - masing team developer sehingga mempermudah dalam development sebuah aplikasi.
 
-##Instalasi Virtual Box
+## Instalasi Virtual Box
 
 Pada artikel ini, penulis menggunakan virtual box dikarenakan virtual box merupakan software open source dan lebih mudah dikonfigurasikan. Silahkan buka file `sources.list` dengan menjalankan perintah.
 
@@ -53,7 +53,7 @@ sudo apt-get update
 sudo apt-get install virtualbox-5.0
 {% endhighlight %}
 
-##Instalasi Vagrant
+## Instalasi Vagrant
 
 Untuk melakukan instalasi vagrant silahkan download vagrant terlebih dahulu di [vagrant download](https://www.vagrantup.com/downloads.html), disini penulis menggunakan ubuntu 14.04 64 bit maka penulis memilih versi debian 64 bit. Untuk melakukan instalasinya silahkan jalankan perintah.
 
@@ -67,7 +67,7 @@ jangan lupa sesuaikan dengan nama file anda. Kemudian lakukan pengecekan vagrant
 vagrant --version
 {% endhighlight %}
 
-##Instalasi Box Vagrant
+## Instalasi Box Vagrant
 
 Box pada vagrant berfungsi sebagai virtual machine yang memuat sistem operasi dan disana juga terdapat seluruh konfigurasi yang kita lakukan. Dengan demikian maka secara tidak langsung sebenarnya kita menggunakan virtual machine maka oleh karena itu kita membutuhkan virtual box sebagai tempat virtual machine.
 
@@ -87,11 +87,11 @@ bisa dilihat bahwa untuk melakukan instalasi box sangatlah mudah yaitu kita hany
 vagrant box add ubuntu/trusty64
 {% endhighlight %}
 
-###PERHATIAN !
+### PERHATIAN !
 
 Untuk melakukan instalasi box membutuhkan koneksi internet dan membutuhkan instalasi yang lama dikarenakan kita akan mendownload sebuah sistem operasi yang berkisar 1 GB > tergantung dari sistem operasi yang akan digunakan.
 
-##Membuat Project
+## Membuat Project
 
 Untuk membuat project, silahkan buat sebuah folder misalnya disini penulis membuat folder `ubuntu-vagrant`. Kemudian jalankan perintah berikut di dalam folder tersebut.
 
@@ -198,11 +198,11 @@ dan secara otomatis terminal yang kita gunakan akan berubah menjadi seperti gamb
 
 ![Screenshot from 2016-01-02 09:41:17.png](../images/Screenshot from 2016-01-02 09:41:17.png)
 
-##Perintah Vagrant
+## Perintah Vagrant
 
 Di dalam vagrant terdapat beberapa perintah penting, berikut adalah beberapa perintah yang sering digunakan di dalam vagrant.
 
-###Destroy
+### Destroy
 
 Perintah ini biasanya digunakan untuk menghapus project dan konfigurasi box yang telah kita buat. Untuk menghapus project kita dapat masuk ke dalam folder project dan menjalankan perintah.
 
@@ -210,7 +210,7 @@ Perintah ini biasanya digunakan untuk menghapus project dan konfigurasi box yang
 vagrant destroy
 {% endhighlight %}
 
-###Halt
+### Halt
 
 Perintah ini berfungsi untuk mematikan/shut down box sehingga konfigurasi yang telah kita kita buat di dalam box tidak akan hilang. Untuk mematikan box kita dapat masuk ke dalam folder project dan menjalankan perintah.
 
@@ -218,7 +218,7 @@ Perintah ini berfungsi untuk mematikan/shut down box sehingga konfigurasi yang t
 vagrant halt
 {% endhighlight %}
 
-###Suspend
+### Suspend
 
 Perintah ini biasanya kita gunakan untuk suspend atau sleep box. Sama seperti halt, semua konfigurasi yang telah kita buat tidak akan hilang. Untuk melakukan suspend pada project, kita dapat masuk ke dalam folder project dan menjalankan perintah.
 
@@ -226,7 +226,7 @@ Perintah ini biasanya kita gunakan untuk suspend atau sleep box. Sama seperti ha
 vagrant suspend
 {% endhighlight %}
 
-##Provisioning
+## Provisioning
 
 Provisioning adalah menginstall/mengkonfigurasi sistem yang terdapat di dalam sebuah box. Biasanya yang kita lakukan sehari - hari adalah melakukan instalasi apache, mysql dan sebagainya, akan tetapi hal - hal seperti ini akan merepotkan ketika kita diharuskan melakukan instalasi terus - menerus ketika kita melakukan `vagrant up` pada PC yang berbeda. Untuk mengoptimalkannya maka kita akan menggunakan fitur provisioning pada vagrant. Silahkan buat sebuah file `install.sh` di dalam folder `ubuntu-vagrant` kemudian isi dengan kodingan berikut.
 
@@ -290,7 +290,7 @@ Untuk menjalankan provisioning silahkan jalankan perintah berikut.
 vagrant provision
 {% endhighlight %}
 
-##Konfigurasi Jaringan
+## Konfigurasi Jaringan
 
 Agar kita dapat melakukan akses terhadap jaringan yang terdapat di dalam box vagrant maka kita harus melakukan konfigurasi jaringan. Konfigurasi yang akan kita lakukan adalah port forwarding artinya jaringan yang ada di dalam box akan kita forward ke komputer local berdasarkan port. Misalnya kita ingin melakukan akses port 80 pada vagrant box dengan menggunakan port 8080 pada komputer local. Silahkan buka file `Vagrantfile` kemudian lakukan konfigurasi seperti berikut ini.
 

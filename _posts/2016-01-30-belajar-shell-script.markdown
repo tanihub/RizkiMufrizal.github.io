@@ -14,7 +14,7 @@ date: 2016-01-30T17:16:48+07:00
 
 Berhubung penulis sedang membuat konfigurasi dan instalasi aplikasi pada ubuntu dengan menggunakan bahasa shell maka pada artikel ini, penulis akan membahas sedikit tentang shell script :D. Sebelum penulis membahas tentang shell, alangkah baiknya kita membahas sedikit teori tentang shell.
 
-##Apa itu Shell ?
+## Apa itu Shell ?
 
 >>Shell adalah sebuah program penterjemah yang berfungsi sebagai jembatan antara user dan kernel.
 
@@ -28,13 +28,13 @@ Biasanya shell akan menyediakan sebuah interface, dimana interface ini berfungsi
 
 Pada artikel ini, penulis hanya menggunakan bash shell GNU yang merupakan pengembangan dari bourne shell.
 
-##Apa itu Shell Script ?
+## Apa itu Shell Script ?
 
 >>Shell Script adalah sebuah bahasa pemrograman yang disusun berdasarkan perintah - perintah shell.
 
 Jika anda menggunakan linux, maka menyusun perintah - perintah shell di dalam sebuah file shell sama seperti ketika anda membuat sebuah aplikasi. Agar artikel tidak terlalu panjang, mari kita bahas bagaimana implementasi shell script pada linux.
 
-##Setup Vagrant
+## Setup Vagrant
 
 Seperti biasanya, penulis akan menggunakan vagrant. Bagi yang belum mengerti apa itu vagrant, silahkan akses di [Belajar Vagrant](http://rizkimufrizal.github.io/belajar-vagrant/). Kali ini kita akan menggunakan box [debian/jessie64](https://atlas.hashicorp.com/debian/boxes/jessie64) atau debian 8.
 
@@ -73,7 +73,7 @@ lalu login ke vagrant dengan perintah
 vagrant ssh
 {% endhighlight %}
 
-##Membuat Hello Word Dengan Shell Script
+## Membuat Hello Word Dengan Shell Script
 
 Sebelum memulai, silahkan install editor terlebih dahulu, penulis menggunakan editor `vim`. Untuk melakukan instalasi vim, jalankan perintah berikut.
 
@@ -126,7 +126,7 @@ untuk menjalankan file tersebut dengan perintah.
 
 maka akan muncul output `hello word`, output tersebut berasal dari perintah `echo`, dimana echo disini sama seperti perintah `puts` pada ruby, `printf` pada bahasa c dan sama seperti bahasa pemrograman lainnya.
 
-##Membuat Inputan
+## Membuat Inputan
 
 Tahap selanjutnya adalah membuat inputan, disini user akan memberikan sebuah inputan dimana inputan ini nantinya akan ditampikan lagi. Silahkan buka file `belajar.sh` lalu ubah codingannya menjadi seperti berikut.
 
@@ -146,7 +146,7 @@ echo "hello $nama"
 
 perintah `read` berfungsi untuk mengambil value dari inputan user, dimana inputan user tersebut akan disimpan ke dalam variabel `nama` lalu variabel nama tersebut di cetak pada perintah `echo` yang kedua.
 
-##Membuat Konfigurasi File
+## Membuat Konfigurasi File
 
 Setelah melewati cara inputan user, langkah selanjutnya adalah kita ingin membuat konfigurasi file pada linux. Misalnya kita ingin membuat konfigurasi file environment pada debian dan melakukan update software. Untuk melakukan konfigurasi pada file environment, maka ubah codingan pada file `belajar.sh` menjadi berikut.
 
