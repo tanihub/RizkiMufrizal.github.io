@@ -125,7 +125,7 @@ include "/etc/bind/named.conf.local";
 Dari codingan diatas dapat dilihat bahwa kita melakukan konfigurasi domain dengan menggunakan zone domain. Dimana zone domain `labti.com` adalah merupakan konfigurasi dari forward sedangkan zone `1.168.192` adalah konfigurasi reverse, berikut adalah perbedaan antara konfigurasi forward dan reverse.
 
 * Forward : mengubah nama domain ke IP address di dalam DNS.
-* Reverse : engubah IP address ke nama domain di dalam DNS.
+* Reverse : mengubah IP address ke nama domain di dalam DNS.
 
 ## Membuat File Forward
 
