@@ -77,7 +77,7 @@ fun hello(nama: String): String {
 berikut adalah penjelasan dari codingan diatas.
 
 * `fun main` berfungsi sebagai method main
-* `println` berfungsi untuk mencetak sama seperti `system.in` di dalam java
+* `println` berfungsi untuk mencetak sama seperti `system.out.println` di dalam java
 * `fun hello` adalah method dengan nama hello dengan type data string
 
 Bisa dilihat contoh source code kotlin diatas lebih sederhana dan sangatlah mirip dengan java. Untuk melakukan compile, silahkan jalankan perintah berikut.
