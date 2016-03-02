@@ -43,7 +43,7 @@ jika berhasil maka akan muncul halaman web tentang web server apache seperti ber
 Langkah selanjutnya adalah melakukan instalasi [PHP](https://secure.php.net/), karena [PHP 7](https://secure.php.net/) udah release maka kita akan menggunakan PHP 7 :D. Untuk melakukan instalasi PHP silahkan jalankan perintah berikut ini.
 
 {% highlight bash %}
-sudo add-apt-repository ppa:ondrej/php-7.0
+sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install php7.0-cli php7.0-mysql php7.0-fpm php7.0-gd php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-common php7.0-snmp snmp php7.0-curl php7.0-json php7.0-pgsql
 {% endhighlight %}
