@@ -101,6 +101,10 @@ Berikut adalah penjelasan dari konfigurasi diatas.
 * range : jarak ip yang akan digunakan pada komputer client
 * option domain-name-servers : berfungsi sebagai IP DNS dari komputer server
 * option domain-name : berfungsi sebagai nama domain
+* option routers : berfungsi sebagai IP dari router atau bisa juga IP komputer server
+* option broadcast-address : berfungsi sebagai broadcast dari IP
+* default-lease-time : berfungsi sebagai waktu tetap untuk peminjaman IP kepada komputer client dari komputer server
+* max-lease-time : berfungsi sebagai waktu maksimal untuk peminjaman IP kepada komputer client dari komputer server
 
 Langkah selanjutnya adalah simpan konfigurasi tersebut dengan menekan tombol `f2` maka akan muncul tampilan seperti berikut.
 
