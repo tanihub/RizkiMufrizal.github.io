@@ -1,4 +1,10 @@
 <meta charset="utf-8">
+<script type="text/javascript">
+	var host = "rizkimufrizal.github.io";
+	if (window.location.host == host && window.location.protocol != "https:") {
+  		window.location.protocol = "https:";
+	}
+</script>
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
