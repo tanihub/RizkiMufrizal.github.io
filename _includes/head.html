@@ -2,8 +2,7 @@
 <script type="text/javascript">
 	var host = "rizkimufrizal.github.io";
 	if (window.location.host == host && window.location.protocol != "https:") {
-    	window.location = "https://" + window.location.href.substring(window.location.protocol.length, window.location.href.length);
-        window.location.reload();
+		window.location = 'https://' + window.location.hostname + window.location.pathname + window.location.hash;
 	}
 </script>
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
