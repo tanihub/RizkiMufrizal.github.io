@@ -3,8 +3,8 @@
 	var host = "http://rizkimufrizal.github.io";
 	if (window.location.host == host && window.location.protocol != "https:") {
   		window.location.protocol = "https:";
+		console.log("cek " + host);
 	}
-	console.log("cek " + host);
 </script>
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
