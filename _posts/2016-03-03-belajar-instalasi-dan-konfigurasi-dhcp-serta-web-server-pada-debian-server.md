@@ -225,7 +225,7 @@ Jika berhasil maka akan muncul output seperti berikut.
 Tahap yang terakhir adalah melakukan testing pada web server, silahkan masuk lagi ke dalam debian, lalu jalankan perintah berikut untuk membuat sebuah halaman html.
 
 {% highlight bash %}
-nana /var/www/html/index.html
+nano /var/www/html/index.html
 {% endhighlight %}
 
 Kemudian masukkan codingan html seperti berikut.
