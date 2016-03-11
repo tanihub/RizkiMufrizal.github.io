@@ -16,7 +16,7 @@ Pada artikel [sebelumnya](https://rizkimufrizal.github.io/instalasi-dan-konfigur
 
 ## Apa Itu Sequence Pada PostgreSQL ?
 
->>Sequence jika dilihat dari bahasa adalah urutan atau berurutan, Artinya sebuah key yang digenerate secara berurutan atau disebut juga dengan sequential key.
+>>Sequence adalah urutan atau berurutan, Artinya sebuah key yang digenerate secara berurutan atau disebut juga dengan sequential key.
 
 Sequence merupakan salah satu fitur yang terdapat pada postgresql. Sequence memiliki konsep yang sama dengan auto increment yang terdapat pada mysql akan tetapi terdapat beberapa perbedaan, diantaranya adalah.
 
