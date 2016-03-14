@@ -145,7 +145,7 @@ Untuk melakuakn remote sebuah project tidak jauh berbeda dengan clone sebuah pro
 git remote add origin https://github.com/RizkiMufrizal/Belajar-Git.git
 {% endhighlight %}
 
-Setelah selesai, anda download dulu source code yang sudah ada di github dengan perintah 'git pull origin master' maka akan muncul file `index.md`. Untuk melakukan commit dan push sama seperti perintah sebelumnya.
+Setelah selesai, anda download dulu source code yang sudah ada di github dengan perintah `git pull origin master` maka akan muncul file `index.md`. Untuk melakukan commit dan push sama seperti perintah sebelumnya.
 
 ## Penjelasan Gitignore
 
