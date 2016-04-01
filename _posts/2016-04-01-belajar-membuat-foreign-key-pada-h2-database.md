@@ -43,12 +43,25 @@ Dari kedua tabel diatas dapat dilihat adanya relasi antara tabel mahasiswa dan t
 
 Kebiasaan seorang mahasiswa bingung bagaimana cara menetukan relasi antar tabel, bahkan ada beberapa mahasiswa yang secara langsung membuat aplikasi tanpa membuat normalisasi dan ERD, padahal normalisasi dan ERD adalah sesuatu yang wajib dibuat. Pada artikel ini, kita akan menggunakan cara cepat untuk menentukan relasi antar tabel. Misalkan penulis mempunyai data seperti berikut.
 
-| Nama Barang | Jenis Barang | Tanggal Kadaluarsa | Harga Satuan Barang | Jumlah Barang Tersedia | Total Harga | Tanggal Transaksi | Nama Pembeli | Jumlah Barang Dibeli | Total Harga Per Barang |
+| NB | JB | TK | HSB | JBT | TH | TT | NP | JBD | THPB |
 |:------------|:-------------|:-------------------|:--------------------|:-----------------------|:------------|:------------------|:-------------|:---------------------|:-----------------------|
 |Rinso|Cair|01-01-2016|Rp 1000|10|Rp 5000|02-02-2016|Rizki|5|Rp 5000|
 |Baju|Padat|01-02-2016|Rp 2000|50|Rp 10000|02-02-2016|Rizki|5|Rp 10000|
 |Rinso|Cair|01-01-2016|Rp 1000|10|Rp 10000|02-02-2016|Mufrizal|10|Rp 10000|
 {: rules="groups"}
+
+Ket :
+
+* NB : Nama Barang
+* JB : Jenis Barang
+* TK : Tanggal Kadaluarsa
+* TH : Total Harga
+* TT : Tanggal Transaksi
+* NP : Nama Pembeli
+* HSB : Harga Satuan Barang
+* JBT : Jumlah Barang Tersedia
+* JBD : Jumlah Barang Dibeli
+* THPB : Total Harga Per Barang
 
 Data diatas merupakan data mentah atau bisa dibilang data diatas masih terdapat duplicate. Biar gampang, silahkan copy data tersebut ke libre office atau excel. Jika sudah kita akan membedakan data - data tersebut. Dari tabel diatas, bisa dilihat bahwa terdapat terdapat column - column yang doubel seperti nama barang, jenis barang, tanggal kadaluarsa, harga satuan barang dan jumlah barang yang tersedia. Column - column tersebut merupakan data barang, dimana data tersebut kita kelompokkan menjadi satu tabel, maka tabel barang akan menjadi seperti berikut.
 
