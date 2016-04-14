@@ -446,6 +446,7 @@ ncat -vv localhost 8888 -u
 {% endhighlight %}
 
 Maksud dari perintah diatas adalah 
+
 * -vv berfungsi untuk memberikan informasi secara detail
 * -u berfungsi untuk mendeklarasikan protokol UDP
 
