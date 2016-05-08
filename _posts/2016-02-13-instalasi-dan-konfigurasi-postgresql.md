@@ -21,7 +21,7 @@ Pada artikel ini, penulis akan mencoba menjelaskan bagaimana instalasi dan konfi
 Silahkan buat sebuah file `pgdg.list` di dalam folder `/etc/apt/sources.list.d/`. Kemudian isikan file tersebut dengan codingan berikut.
 
 {% highlight bash %}
-deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
+deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main
 {% endhighlight %}
 
 kemudian lakukan import key dengan menjalankan perintah berikut.
