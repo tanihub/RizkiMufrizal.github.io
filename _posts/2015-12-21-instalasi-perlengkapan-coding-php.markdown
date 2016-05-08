@@ -51,7 +51,7 @@ sudo apt-get install php7.0-cli php7.0-mysql php7.0-fpm php7.0-gd php7.0 libapac
 Setelah selesai, kita akan melakukan testing terlebih dahulu. Karena htdocs terdapat di dalam folder `/var/www/html/` maka berikan hak akses terlebih dahulu dengan perintah
 
 {% highlight bash %}
-sudo chmod 755 -R /var/www/
+sudo chmod 777 -R /var/www/
 {% endhighlight %}
 
 Setelah selesai jalankan perintah `nano /var/www/html/info.php` kemudian masukkan codingan berikut ini.
@@ -86,8 +86,8 @@ Dari definisi diatas dapat ditarik kesimpulan bahwa sebenarnya mariadb dengan my
 
 {% highlight bash %}
 sudo apt-get install software-properties-common
-sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
-sudo add-apt-repository 'deb [arch=amd64,i386] http://mariadb.biz.net.id/repo/10.1/ubuntu trusty main'
+sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+sudo add-apt-repository 'deb [arch=amd64,i386] http://mariadb.biz.net.id/repo/10.1/ubuntu xenial main'
 sudo apt-get update
 sudo apt-get install mariadb-server mariadb-client
 {% endhighlight %}
