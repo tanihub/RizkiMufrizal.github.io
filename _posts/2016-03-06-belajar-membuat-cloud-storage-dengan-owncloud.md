@@ -57,13 +57,13 @@ Untuk melakukan akses berdasarkan user tersebut, silahkan logout dan login kemba
 Owncloud telah menyediakan sebuah aplikasi client berbasis desktop yang dapat kita gunakan untuk mengakses cloud storage yang telah kita buat. Untuk melakukan instalasi client desktop owncloud, silahkan jalankan perintah berikut.
 
 {% highlight bash %}
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_14.04/ /' >> /etc/apt/sources.list.d/owncloud-client.list"
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_16.04/ /' >> /etc/apt/sources.list.d/owncloud-client.list"
 {% endhighlight %}
 
 Perintah diatas berfungsi untuk menambah repository ppa yang kita butuhkan untuk instalasi client desktop owncloud. Langkah selanjutnya adalah melakukan import key dengan perintah.
 
 {% highlight bash %}
-wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_14.04/Release.key
+wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Ubuntu_16.04/Release.key
 sudo apt-key add - < Release.key
 {% endhighlight %}
 
