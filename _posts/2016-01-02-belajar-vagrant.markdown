@@ -37,13 +37,13 @@ sudo gedit /etc/apt/sources.list
 kemudian tambahkan sintak berikut pada baris akhir
 
 {% highlight bash %}
-deb http://download.virtualbox.org/virtualbox/debian trusty contrib
+deb http://download.virtualbox.org/virtualbox/debian xenial contrib
 {% endhighlight %}
 
-Jangan lupa sesuiakan dengan sistem operasi anda, disini saya menggunakan ubuntu 14.04 yaitu trusty, Setelah selesai kemudian disimpan dan untuk memasukkan public key jalankan perintah berikut.
+Jangan lupa sesuiakan dengan sistem operasi anda, disini saya menggunakan ubuntu 16.04 yaitu xenial, Setelah selesai kemudian disimpan dan untuk memasukkan public key jalankan perintah berikut.
 
 {% highlight bash %}
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 {% endhighlight %}
 
 Kemudian untuk melakukan instalasi virtual box jalankan perintah berikut.
