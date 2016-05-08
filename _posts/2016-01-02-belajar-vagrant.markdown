@@ -55,7 +55,7 @@ sudo apt-get install virtualbox-5.0
 
 ## Instalasi Vagrant
 
-Untuk melakukan instalasi vagrant silahkan download vagrant terlebih dahulu di [vagrant download](https://www.vagrantup.com/downloads.html), disini penulis menggunakan ubuntu 14.04 64 bit maka penulis memilih versi debian 64 bit. Untuk melakukan instalasinya silahkan jalankan perintah.
+Untuk melakukan instalasi vagrant silahkan download vagrant terlebih dahulu di [vagrant download](https://www.vagrantup.com/downloads.html), disini penulis menggunakan ubuntu 16.04 64 bit maka penulis memilih versi debian 64 bit. Untuk melakukan instalasinya silahkan jalankan perintah.
 
 {% highlight bash %}
 sudo dpkg -i vagrant_1.8.1_x86_64.deb
