@@ -149,7 +149,7 @@ CREATE TABLE IF NOT EXISTS tb_penjualan_detail(
     total_harga_per_barang DECIMAL(10) NOT NULL,
     kode_transaksi_penjualan VARCHAR(150) NOT NULL,
     id_barang VARCHAR(150) NOT NULL,
-    FOREIGN KEY(kode_transaksi_penjualan) REFERENCES tb_penjualan(kode_transaksi_penjualan),
+    FOREIGN KEY(kode_transaksi_penjualan) REFERENCES tb_penjualan(kode_transaksi_penjualan) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY(id_barang) REFERENCES tb_barang(id_barang)
 );
 {% endhighlight %}
