@@ -119,7 +119,7 @@ Jika terdapat error seperti ini
 maka jalankan perintah
 
 {% highlight bash %}
-sudo service apache2 restart
+sudo systemctl restart apache2
 {% endhighlight %}
 
 kemudian akses kembali phpmyadmin anda :).
