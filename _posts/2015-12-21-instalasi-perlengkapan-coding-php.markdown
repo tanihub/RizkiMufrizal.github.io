@@ -45,7 +45,7 @@ Langkah selanjutnya adalah melakukan instalasi [PHP](https://secure.php.net/), k
 {% highlight bash %}
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
-sudo apt-get install php7.0-cli php7.0-mysql php7.0-fpm php7.0-gd php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-common php7.0-snmp snmp php7.0-curl php7.0-json php7.0-pgsql php7.0-mbstring php7.0-zip
+sudo apt-get install php7.0-cli php7.0-mysql php7.0-fpm php7.0-gd php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-common php7.0-snmp snmp php7.0-curl php7.0-json php7.0-pgsql php7.0-mbstring php7.0-zip php7.0-xmlrpc php7.0-cgi php-pear php7.0-dev php7.0-imap
 {% endhighlight %}
 
 Setelah selesai, kita akan melakukan testing terlebih dahulu. Karena htdocs terdapat di dalam folder `/var/www/html/` maka berikan hak akses terlebih dahulu dengan perintah
