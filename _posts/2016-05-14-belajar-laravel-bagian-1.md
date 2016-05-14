@@ -25,13 +25,9 @@ Singkat cerita, penulis ingin belajar mengenai framework laravel, biasanya penul
 Langkah yang pertama kali kita lakukan adalah melakukan setup project. Untuk mempermudah tahap development, kita akan menggunakan beberapa tool berikut diantaranya adalah
 
 1. Vagrant, bagi yang belum mengerti apa itu vagrant, silahkan lihat di artikel [belajar vagrant](https://rizkimufrizal.github.io/belajar-vagrant/).
-2. [PhpStorm](https://www.jetbrains.com/phpstorm/) merupakan IDE untuk bahasa pemrograman php
+2. [Vim](http://www.vim.org/) merupakan editor yang akan kita gunakan
 
 sedangkan tool yang lain seperti composer, hhvm, nginx dan lain sebagainya akan kita lakukan konfigurasi pada vagrant.
-
-### Keterangan
-
-Untuk mempermudah development, silahkan lakukan instalasi php dan tool lain nya di komputer anda karena IDE PhpStorm memerlukan interpreter php. Bagi yang belum melakukan instalasi php bisa dilihat di artikel [instalasi perlengkapan coding php](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-php/).
 
 ### Membuat Konfigurasi Vagrant
 
@@ -120,7 +116,7 @@ untuk file nginx-vhost seperti berikut.
 server {
   listen 80 default_server;
   listen [::]:80 default_server;
-  root /vagrant/Aplikasi-Perpustakaan/public;
+  root /home/vagrant/Aplikasi-Perpustakaan/public;
   index index.html index.php index.htm index.nginx-debian.html;
 
   server_name perpustakaan.com;
@@ -154,35 +150,15 @@ vagrant ssh
 
 ### Membuat Project Laravel Dengan Composer
 
-Untuk membuat project laravel, kita dapat menggunakan composer. Silahkan akses folder `vagrant` yang berada pada folder system vagrant yang sedang anda gunakan dengan perintah berikut.
-
-{% highlight bash %}
-cd /vagrant
-{% endhighlight %}
-
-Jalankan perintah berikut untuk membuat project laravel dengan menggunakan composer.
+Untuk membuat project laravel, kita dapat menggunakan composer. Jalankan perintah berikut untuk membuat project laravel dengan menggunakan composer.
 
 {% highlight bash %}
 composer create-project --prefer-dist laravel/laravel Aplikasi-Perpustakaan
 {% endhighlight %}
 
-secara otomatis, composer akan membuatkan anda sebuah project laravel dengan nama Aplikasi-Perpustakaan. Dan lihatlah secara otomatis project laravel akan muncul di dalam folder `Belajar-Laravel`. Jika dilihat dari sisi terminal pada vagrant, maka akan muncul seperti berikut.
+secara otomatis, composer akan membuatkan anda sebuah project laravel dengan nama Aplikasi-Perpustakaan. 
 
-![Screenshot from 2016-05-14 10-09-15.png](../images/Screenshot from 2016-05-14 10-09-15.png)
-
-Sedangkan jika dilihat dari sisi folder yang ada pada ubuntu, maka akan muncul seperti berikut.
-
-![Screenshot from 2016-05-14 10-04-47.png](../images/Screenshot from 2016-05-14 10-04-47.png)
-
-### Membuka Project Laravel Dengan PhpStorm
-
-Silahkan buka IDE PhpStorm, sebelum membuka project dengan menggunakan PhpStorm, kita harus melakukan instalasi plugin laravel terlebih dahulu, silahkan pilih menu configure lalu pilih plugin maka akan muncul tampilan form baru untuk plugins, silahkan pilih menu browse repositories lalu silahkan cari plugin laravel, maka akan muncul seperti berikut.
-
-![Screenshot from 2016-05-14 10-17-37.png](../images/Screenshot from 2016-05-14 10-17-37.png)
-
-Silahkan lakukan instalasi terhadap plugin laravel dan juga symfony karena basic dari laravel adalah symfony. Jika sudah maka silahkan restart IDE PhpStorm anda.
-
-Setelah selesai, yang perlu diperhatikan lagi adalah bahwa agar project laravel benar - benar dapat menggunakan autocomplete pada PhpStorm, kita akan menggunakan [laravel IDE helper](https://github.com/barryvdh/laravel-ide-helper). Silahkan buka kembali terminal pada vagrant anda, silahkan akses folder project laravel anda, lalu ketikan perintah berikut.
+Setelah selesai, yang perlu diperhatikan lagi adalah bahwa agar project laravel benar - benar dapat menggunakan autocomplete pada vim, kita akan menggunakan [laravel IDE helper](https://github.com/barryvdh/laravel-ide-helper). Silahkan buka kembali terminal pada vagrant anda, silahkan akses folder project laravel anda, lalu ketikan perintah berikut.
 
 {% highlight bash %}
 composer require barryvdh/laravel-ide-helper
@@ -248,9 +224,5 @@ php artisan ide-helper:generate
 Jika berhasil maka akan muncul output seperti berikut.
 
 ![Screenshot from 2016-05-14 10-44-28.png](../images/Screenshot from 2016-05-14 10-44-28.png)
-
-Setelah selesai semuanya, silahkan kembali ke IDE PhpStorm, lalu pilih menu open lalu cari project laravel anda yaitu `Aplikasi-Perpustakaan`. Jika berhasil, maka akan muncul output seperti berikut.
-
-![Screenshot from 2016-05-14 10-49-33.png](../images/Screenshot from 2016-05-14 10-49-33.png)
 
 Sekian tutorial belajar laravel bagian 1, untuk bagian selanjutnya InsyaAllah akan segera di publish dan Terima kasih :).
