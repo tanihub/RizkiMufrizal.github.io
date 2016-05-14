@@ -225,4 +225,40 @@ Jika berhasil maka akan muncul output seperti berikut.
 
 ![Screenshot from 2016-05-14 10-44-28.png](../images/Screenshot from 2016-05-14 10-44-28.png)
 
+Kemudian silahkan akses folder project anda untuk memberikan hak akses terhadap folder project laravel, sebelum memberikan hak akses, kita terlebih dahulu untuk membersihkan cache dengan perintah
+
+{% highlight bash %}
+php artisan cache:clear
+{% endhighlight %}
+
+langkah selanjutnya silahkan berikan hak akses dengan perintah
+
+{% highlight bash %}
+sudo chmod -R 777 *
+{% endhighlight %}
+
+kemudian lakukan load composer dengan perintah
+
+{% highlight bash %}
+composer dump-autoload
+{% endhighlight %}
+
+### Melakukan Setting Domain
+
+Setelah melakukan konfigurasi seperti diatas, langkah selanjutnya adalah membuat domain sendiri, sehingga kita akan melakukan akses aplikasi dengan menggunakan nama domain. Silahkan buka file `hosts` dengan perintah
+
+{% highlight bash %}
+sudo nano /etc/hosts
+{% endhighlight %}
+
+lalu tambahkan script berikut.
+
+{% highlight bash %}
+127.0.0.1       perpustakaan.com
+{% endhighlight %}
+
+Silahkan akses web anda pada browser di `http://perpustakaan.com:8080`, jika berhasil maka outputnya seperti berikut.
+
+![Screenshot from 2016-05-14 17-48-57.png](../images/Screenshot from 2016-05-14 17-48-57.png)
+
 Sekian tutorial belajar laravel bagian 1, untuk bagian selanjutnya InsyaAllah akan segera di publish dan Terima kasih :).
