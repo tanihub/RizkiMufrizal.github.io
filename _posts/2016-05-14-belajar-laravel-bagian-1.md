@@ -4,7 +4,7 @@ title: Belajar Laravel Bagian 1
 modified:
 categories: 
 description: belajar laravel
-tags: [laravel, phpstorm, vagrant, codeigniter, mvc, nginx, mariadb, hhvm, ide-helper]
+tags: [laravel, vim, vagrant, codeigniter, mvc, nginx, mariadb, hhvm, ide-helper]
 image:
   background: abstract-3.png
 comments: true
