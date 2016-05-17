@@ -47,13 +47,19 @@ Vagrant.configure(2) do |config|
   end
   config.vm.provision 'shell', path: 'setup.sh'
   config.vm.network 'forwarded_port', guest: 80, host: 8080
+  config.vm.synced_folder 'Projects', '/home/vagrant/Projects', create: true, owner: 'www-data', group: 'www-data'
 end
 {% endhighlight %}
 
 kemudian silahkan buat sebuah file dengan nama `setup.sh` untuk konfigurasi provisioning, kemudian isikan codingan shell seperti berikut.
 
 {% highlight bash %}
-#!/bin/bash
+#!/bin/sh
+#
+# Copyright (C) 2016 Rizki Mufrizal <mufrizalrizki@gmail.com>
+#
+# Distributed under terms of the MIT license.
+#
 
 echo "proses provisioning"
 
@@ -81,28 +87,32 @@ apt-get upgrade -y
 apt-get dist-upgrade -y
 
 echo "Konfigurasi Mariadb"
-apt install -y debconf-utils
+apt-get install -y debconf-utils
 echo mariadb-server-10.1 mysql-server/root_password password root | debconf-set-selections
 echo mariadb-server-10.1 mysql-server/root_password_again password root | debconf-set-selections
 
-apt-get install -y git nginx mariadb-server mariadb-client hhvm
+apt-get install -y git nginx mariadb-server mariadb-client hhvm vim
 
 echo "Konfigurasi Virtual Host Nginx"
 cp /vagrant/configuration/nginx-vhost /etc/nginx/sites-available/belajarlaravel
 ln -s /etc/nginx/sites-available/belajarlaravel /etc/nginx/sites-enabled/
 rm /etc/nginx/sites-enabled/default
-service nginx restart
 
 echo "Konfigurasi HHVM"
 /usr/share/hhvm/install_fastcgi.sh
+update-rc.d hhvm defaults
 /usr/bin/update-alternatives --install /usr/bin/php php /usr/bin/hhvm 60
+service nginx restart
 
 echo "Install Composer"
 curl -sS https://getcomposer.org/installer | php
 mv /home/vagrant/composer.phar /usr/local/bin/composer
+
+echo "konfigurasi vim"
+cp /vagrant/configuration/.vimrc /home/vagrant
 {% endhighlight %}
 
-Kemudian untuk environment pada vagrant silahkan buat sebuah folder dengan nama `configuration` dan buat lah file `environment`, `nginx-vhost` dan `sources.list` di dalam nya. Untuk file environment, silahkan isikan dengan value seperti berikut.
+Kemudian untuk environment pada vagrant silahkan buat sebuah folder dengan nama `configuration` dan buat lah file `environment`, `nginx-vhost`, `sources.list` dan `.vimrc` di dalam nya. Untuk file environment, silahkan isikan dengan value seperti berikut.
 
 {% highlight bash %}
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
@@ -116,7 +126,7 @@ untuk file nginx-vhost seperti berikut.
 server {
   listen 80 default_server;
   listen [::]:80 default_server;
-  root /home/vagrant/Aplikasi-Perpustakaan/public;
+  root /home/vagrant/Projects/Aplikasi-Perpustakaan/public;
   index index.html index.php index.htm index.nginx-debian.html;
 
   server_name perpustakaan.com;
@@ -128,12 +138,51 @@ server {
 }
 {% endhighlight %}
 
-dan yang terakhir untuk file sources.list isikan seperti berikut.
+untuk file sources.list silahkan masukkan codingan berikut.
 
 {% highlight bash %}
 deb http://kambing.ui.ac.id/ubuntu trusty main universe multiverse
 deb http://kambing.ui.ac.id/ubuntu trusty-updates main universe multiverse
 deb http://security.ubuntu.com/ubuntu trusty-security main universe multiverse
+{% endhighlight %}
+
+dan yang terakhir untuk file .vimrc isikan seperti berikut.
+
+{% highlight vim %}
+execute pathogen#infect()
+syntax on
+
+set nocompatible
+filetype plugin indent on
+
+syntax enable
+let g:solarized_termcolors=256
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+set ruler
+set number
+
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+
+set colorcolumn=+1
+
+set autoread
+
+set splitright
+set splitbelow
+
+let g:SuperTabClosePreviewOnPopupClose = 1
+
+set rtp+=~/.vim/bundle/vundle
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'rstacruz/sparkup'
 {% endhighlight %}
 
 Nah konfigurasi vagrant telah selesai, silahkan jalankan dengan perintah
@@ -150,7 +199,7 @@ vagrant ssh
 
 ### Membuat Project Laravel Dengan Composer
 
-Untuk membuat project laravel, kita dapat menggunakan composer. Jalankan perintah berikut untuk membuat project laravel dengan menggunakan composer.
+Untuk membuat project laravel, kita dapat menggunakan composer. Akses folder Projects yang ada di home vagrant, lalu jalankan perintah berikut untuk membuat project laravel dengan menggunakan composer.
 
 {% highlight bash %}
 composer create-project --prefer-dist laravel/laravel Aplikasi-Perpustakaan
