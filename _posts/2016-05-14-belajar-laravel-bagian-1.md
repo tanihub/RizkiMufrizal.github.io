@@ -43,7 +43,7 @@ maka akan dibentuk sebuah file yaitu `Vagrantfile`, silahkan buka file tersebut 
 Vagrant.configure(2) do |config|
   config.vm.box = 'ubuntu/trusty64'
   config.vm.provider 'virtualbox' do |v|
-    v.memory = 1024
+    v.memory = 2048
   end
   config.vm.provision 'shell', path: 'setup.sh'
   config.vm.network 'forwarded_port', guest: 80, host: 8080
@@ -108,8 +108,6 @@ echo "Install Composer"
 curl -sS https://getcomposer.org/installer | php
 mv /home/vagrant/composer.phar /usr/local/bin/composer
 
-echo "konfigurasi vim"
-cp /vagrant/configuration/.vimrc /home/vagrant
 {% endhighlight %}
 
 Kemudian untuk environment pada vagrant silahkan buat sebuah folder dengan nama `configuration` dan buat lah file `environment`, `nginx-vhost`, `sources.list` dan `.vimrc` di dalam nya. Untuk file environment, silahkan isikan dengan value seperti berikut.
@@ -138,51 +136,13 @@ server {
 }
 {% endhighlight %}
 
-untuk file sources.list silahkan masukkan codingan berikut.
+
+dan yang terakhir untuk file sources.list isikan seperti berikut.
 
 {% highlight bash %}
 deb http://kambing.ui.ac.id/ubuntu trusty main universe multiverse
 deb http://kambing.ui.ac.id/ubuntu trusty-updates main universe multiverse
 deb http://security.ubuntu.com/ubuntu trusty-security main universe multiverse
-{% endhighlight %}
-
-dan yang terakhir untuk file .vimrc isikan seperti berikut.
-
-{% highlight vim %}
-execute pathogen#infect()
-syntax on
-
-set nocompatible
-filetype plugin indent on
-
-syntax enable
-let g:solarized_termcolors=256
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-set ruler
-set number
-
-set expandtab
-set shiftwidth=4
-set softtabstop=4
-set autoindent
-
-set colorcolumn=+1
-
-set autoread
-
-set splitright
-set splitbelow
-
-let g:SuperTabClosePreviewOnPopupClose = 1
-
-set rtp+=~/.vim/bundle/vundle
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'rstacruz/sparkup'
 {% endhighlight %}
 
 Nah konfigurasi vagrant telah selesai, silahkan jalankan dengan perintah
@@ -287,24 +247,6 @@ php artisan ide-helper:generate
 Jika berhasil maka akan muncul output seperti berikut.
 
 ![Screenshot from 2016-05-14 10-44-28.png](../images/Screenshot from 2016-05-14 10-44-28.png)
-
-Kemudian silahkan akses folder project anda untuk memberikan hak akses terhadap folder project laravel, sebelum memberikan hak akses, kita terlebih dahulu untuk membersihkan cache dengan perintah
-
-{% highlight bash %}
-php artisan cache:clear
-{% endhighlight %}
-
-langkah selanjutnya silahkan berikan hak akses dengan perintah
-
-{% highlight bash %}
-sudo chmod -R 777 *
-{% endhighlight %}
-
-kemudian lakukan load composer dengan perintah
-
-{% highlight bash %}
-composer dump-autoload
-{% endhighlight %}
 
 ### Melakukan Setting Domain
 
