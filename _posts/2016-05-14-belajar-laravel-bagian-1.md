@@ -199,7 +199,15 @@ vagrant ssh
 
 ### Membuat Project Laravel Dengan Composer
 
-Untuk membuat project laravel, kita dapat menggunakan composer. Akses folder Projects yang ada di home vagrant, lalu jalankan perintah berikut untuk membuat project laravel dengan menggunakan composer.
+Untuk membuat project laravel, kita dapat menggunakan composer. Akses folder Projects yang ada di home vagrant melalui terminal. Kemudian jalankan perintah berikut untuk masuk ke mode root.
+
+{% highlight bash %}
+sudo su
+{% endhighlight %}
+
+>>INFO : Semua perintah disini akan menggunakan hak akses root dikarenakan folder `Projects` diberikan hak akses root.
+
+lalu jalankan perintah berikut untuk membuat project laravel dengan menggunakan composer.
 
 {% highlight bash %}
 composer create-project --prefer-dist laravel/laravel Aplikasi-Perpustakaan
@@ -213,7 +221,13 @@ Setelah selesai, yang perlu diperhatikan lagi adalah bahwa agar project laravel 
 composer require barryvdh/laravel-ide-helper
 {% endhighlight %}
 
-Jika telah selesai, silahkan buka file `app.php` yang berada di dalam folder `config/`, kemudian cari array `providers` silahkan tambahkan codingan seperti berikut.
+Jika telah selesai, silahkan buka file `app.php` yang berada di dalam folder `config/` dengan perintah berikut.
+
+{% highlight php %}
+vim config/app.php
+{% endhighlight %}
+
+Kemudian cari array `providers` silahkan tambahkan codingan seperti berikut.
 
 {% highlight php %}
 Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
