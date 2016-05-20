@@ -82,6 +82,9 @@ echo "Tambah Repo HHVM"
 apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e7281be7a449
 add-apt-repository "deb http://dl.hhvm.com/ubuntu $(lsb_release -sc) main"
 
+echo "Tambah Repo Node JS"
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
 apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
@@ -91,7 +94,7 @@ apt-get install -y debconf-utils
 echo mariadb-server-10.1 mysql-server/root_password password root | debconf-set-selections
 echo mariadb-server-10.1 mysql-server/root_password_again password root | debconf-set-selections
 
-apt-get install -y git nginx mariadb-server mariadb-client hhvm vim
+apt-get install -y git nginx mariadb-server mariadb-client hhvm vim nodejs
 
 echo "Konfigurasi Virtual Host Nginx"
 cp /vagrant/configuration/nginx-vhost /etc/nginx/sites-available/belajarlaravel
@@ -107,7 +110,6 @@ service nginx restart
 echo "Install Composer"
 curl -sS https://getcomposer.org/installer | php
 mv /home/vagrant/composer.phar /usr/local/bin/composer
-
 {% endhighlight %}
 
 Kemudian untuk environment pada vagrant silahkan buat sebuah folder dengan nama `configuration` dan buat lah file `environment`, `nginx-vhost`, `sources.list` dan `.vimrc` di dalam nya. Untuk file environment, silahkan isikan dengan value seperti berikut.
