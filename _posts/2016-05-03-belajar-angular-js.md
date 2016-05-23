@@ -28,7 +28,7 @@ bower init
 
 Kemudian silahkan isi konfigurasinya seperti berikut.
 
-![Screenshot_20160503_103840.png](../images/Screenshot_20160503_103840.png)
+![Screenshot from 2016-05-03 10-40-10.png](../images/Screenshot from 2016-05-03 10-40-10.png)
 
 Lalu tahap selanjutnya, kita akan mendownload dependency library yang diperlukan, silahkan jalankan perintah berikut.
 
@@ -86,7 +86,7 @@ Berikut adalah penjelasan mengenai codingan diatas.
 
 Kemudian silahkan jalankan file `index.html` pada browser anda, jika berhasil maka akan tampil seperti berikut.
 
-![Screenshot_20160503_105316.png](../images/Screenshot_20160503_105316.png)
+![Screenshot from 2016-05-03 10-40-11.png](../images/Screenshot from 2016-05-03 10-40-11.png)
 
 ## Membuat CRUD Sederhana Dengan Angular JS
 
@@ -290,18 +290,18 @@ Codingan diatas berfungsi untuk proses crud pada bagian angular js. Function gen
 
 output untuk proses insert.
 
-![Screenshot_20160503_215651.png](../images/Screenshot_20160503_215651.png)
+![Screenshot from 2016-05-03 10-41-06.png](../images/Screenshot from 2016-05-03 10-41-06.png)
 
 output untuk proses select.
 
-![Screenshot_20160503_215704.png](../images/Screenshot_20160503_215704.png)
+![Screenshot from 2016-05-03 10-41-07.png](../images/Screenshot from 2016-05-03 10-41-07.png)
 
 output untuk proses update
 
-![Screenshot_20160503_215713.png](../images/Screenshot_20160503_215713.png)
+![Screenshot from 2016-05-03 10-41-16.png](../images/Screenshot from 2016-05-03 10-41-16.png)
 
 output untuk proses delete
 
-![Screenshot_20160503_220024.png](../images/Screenshot_20160503_220024.png)
+![Screenshot from 2016-05-03 10-41-24.png](../images/Screenshot from 2016-05-03 10-41-24.png)
 
 Sekian tutorial belajar angular js dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Angular JS](https://github.com/RizkiMufrizal/Belajar-AngularJS).
