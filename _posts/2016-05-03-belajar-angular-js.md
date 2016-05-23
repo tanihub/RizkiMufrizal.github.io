@@ -84,7 +84,28 @@ Berikut adalah penjelasan mengenai codingan diatas.
 * `ng-model` berfungsi sebagai model yang dapat menampung data, nantinya data ini akan ditampilkan.
 * {% raw %} {{nama}} {% endraw %} berfungsi untuk menampilkan data, di dalam angular, kita akan menggunakan tanda {% raw %} {{}} {% endraw %} untuk menampilkan data
 
-Kemudian silahkan jalankan file `index.html` pada browser anda, jika berhasil maka akan tampil seperti berikut.
+Nah setelah selesai, selanjutnya kita akan menjalankan file `index.html`, untuk menjalankannya, kita akan menggunakan plugin [http-server](https://github.com/indexzero/http-server) dari node js :D. Bagi anda yang masing bingung dengan node js, silahkan simak di artikel [instalasi perlengkapan node js](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Untuk melakukan instalasi http-server, silahkan jalankan perintah berikut.
+
+{% highlight bash %}
+ npm install -g http-server
+{% endhighlight %}
+
+Setelah selesai, jalankan perintah berikut pada root project untuk menjalankan http-server.
+
+{% highlight bash %}
+http-server
+{% endhighlight %}
+
+Jika berhasil, maka di terminal akan muncul output seperti berikut.
+
+{% highlight bash %}
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+Hit CTRL-C to stop the server
+{% endhighlight %}
+
+Kemudian silahkan akses `http://127.0.0.1:8080` pada browser anda.
 
 ![Screenshot from 2016-05-03 10-40-11.png](../images/Screenshot from 2016-05-03 10-40-11.png)
 
