@@ -20,24 +20,48 @@ Untuk melakukan coding java, ada beberapa hal yang harus kita lakukan dintaranya
 
 Pada tutorial ini, penulis hanya menjelaskan bagaimana instalasi pada sistem operasi linux, penulis mengunakan salah distro linux yaitu ubuntu.
 
-## Instalasi JDK
-Untuk melakukan instalasi pada ubuntu, tambahkan repository PPA berikut dengan menggunakan terminal
+## Instalasi OpenJDK
+
+JDK dan JRE yang akan kita gunakan adalah OpenJDK. Beberapa developer sedikit kebingungan untuk menggunakan OpenJDK dikarenakan font yang digunakan pada OpenJDK masih acak - acakan. Untuk mengatasi masalah tersebut, pada artikel ini akan dibahas sedikit bagaimana cara mengatasi masalah font OpenJDK pada ubuntu. Silahkan tambahkan PPA berikut untuk kebutuhan `font infinality`.
 
 {% highlight bash %}
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:no1wantdthisname/ppa
 {% endhighlight %}
 
-
-lalu lakukan update
+Kemudian lakukan update seperti berikut.
 
 {% highlight bash %}
-sudo apt-get update
+sudo apt update
 {% endhighlight %}
 
-jika update telah selesai, maka lakukan instalasi dengan perintah
+kemudian lakukan instalasi font infinality seperti berikut.
 
 {% highlight bash %}
-sudo apt-get install oracle-java8-installer
+sudo apt install libfreetype6 fontconfig-infinality
+{% endhighlight %}
+
+Langkah selanjutnya adalah kita akan mengganti konfigurasi font infinality yang lama dengan perintah berikut.
+
+{% highlight bash %}
+sudo apt install libfreetype6 fontconfig-infinality
+{% endhighlight %}
+
+Kemudian tambahkan PPA untuk font fix OpenJDK seperti berikut.
+
+{% highlight bash %}
+sudo add-apt-repository ppa:no1wantdthisname/openjdk-fontfix
+{% endhighlight %}
+
+Setelah selesai, tambahkan PPA berikut untuk repository OpenJDK.
+
+{% highlight bash %}
+sudo add-apt-repository ppa:openjdk-r/ppa
+{% endhighlight %}
+
+Kemudian jalankan perintah berikut untuk instalasi OpenJDK.
+
+{% highlight bash %}
+sudo apt install openjdk-8-jdk openjdk-8-jre
 {% endhighlight %}
 
 ## Instalasi build tool java
@@ -60,14 +84,14 @@ sudo gedit /etc/environment
 kemudian sisipkan di baris paling atas
 
 {% highlight bash %}
-JAVA_HOME=/usr/lib/jvm/java-8-oracle/
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 M2_HOME=/home/rizki/programming/build-tool/apache-maven
 {% endhighlight %}
 
 ganti isi dari JAVA_HOME dan M2_HOME sesuai dengan folder anda, kemudian pada bagian `PATH` tambahkan dan jangan lupa sesuaikan dengan folder anda.
 
 {% highlight bash %}
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/home/rizki/programming/build-tool/apache-maven/bin"
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-openjdk-amd64/bin:/home/rizki/programming/build-tool/apache-maven/bin"
 {% endhighlight %}
 
 kemudian lakukan pengujian dengan menjalankan beberapa perintah berikut
