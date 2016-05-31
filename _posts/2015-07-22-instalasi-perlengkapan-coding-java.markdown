@@ -43,7 +43,8 @@ sudo apt install libfreetype6 fontconfig-infinality
 Langkah selanjutnya adalah kita akan mengganti konfigurasi font infinality yang lama dengan perintah berikut.
 
 {% highlight bash %}
-sudo apt install libfreetype6 fontconfig-infinality
+sudo rm /etc/fonts/conf.avail/52-infinality.conf
+sudo ln -s /etc/fonts/infinality/infinality.conf /etc/fonts/conf.avail/52-infinality.conf
 {% endhighlight %}
 
 Kemudian tambahkan PPA untuk font fix OpenJDK seperti berikut.
