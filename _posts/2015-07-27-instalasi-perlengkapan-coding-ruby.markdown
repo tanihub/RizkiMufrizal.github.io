@@ -51,6 +51,24 @@ ruby --version
 gem --version
 {% endhighlight %}
 
+Jika anda ingin mengubah versi ruby menjadi versi yang lain, silahkan lakukan perintah berikut untuk mengahapus default ruby yang digunakan.
+
+{% highlight bash %}
+rvm reset
+{% endhighlight %}
+
+Kemudian silahkan jalankan perintah berikut untuk memilih ruby yang akan anda gunakan.
+
+{% highlight bash %}
+rvm alias create default {versi ruby}
+{% endhighlight %}
+
+berikut adalah contohnya
+
+{% highlight bash %}
+rvm alias create default 2.3.0
+{% endhighlight %}
+
 Jika sudah, maka tahap selanjutnya adalah install `bundler`. Bundler ini sendiri berfungsi untuk mendownload dependency library yang dibutuhkan oleh project kita nantinya. Bedanya bundler dengan gem yaitu gem hanya sebagai penentu dari versi library yang akan kita gunakan sedangkan bundler akan mendownload semua kepentingan dari project dan akan memeriksa apakah sebuah library mempunyai missing dengan library yang lainnya. install bundler dengan perintah.
 
 {% highlight bash %}
