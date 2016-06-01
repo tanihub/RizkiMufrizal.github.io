@@ -3,14 +3,12 @@ layout: post
 title: Instalasi Apt-Fast Dan ZSH Pada Ubuntu Mate
 modified:
 categories: 
-description:
-tags: []
+description: instalasi apt-fast dan zsh pada ubuntu mate
+tags: [apt-fast, zsh, ubuntu mate]
 image:
-  feature:
-  credit:
-  creditlink:
-comments:
-share:
+  background: abstract-3.png
+comments: true
+share: true
 date: 2016-06-01T10:37:01+07:00
 ---
 
