@@ -62,7 +62,7 @@ sudo add-apt-repository ppa:openjdk-r/ppa
 Kemudian jalankan perintah berikut untuk instalasi OpenJDK.
 
 {% highlight bash %}
-sudo apt install openjdk-8-jdk openjdk-8-jre
+sudo apt install openjdk-8-jdk openjdk-8-jre icedtea-8-plugin icedtea-plugin
 {% endhighlight %}
 
 ## Instalasi build tool java
