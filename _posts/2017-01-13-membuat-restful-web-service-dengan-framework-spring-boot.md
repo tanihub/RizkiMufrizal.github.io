@@ -4,7 +4,7 @@ title: Membuat RESTful Web Service Dengan Framework Spring Boot
 modified:
 categories:
 description: membuat RESTful Web Service dengan Framework Spring Boot
-tags: [spring boot, RESTful Web Service, heroku, mongodb]
+tags: [spring boot, RESTful Web Service, mongodb]
 image:
   background: abstract-3.png
 comments: true
