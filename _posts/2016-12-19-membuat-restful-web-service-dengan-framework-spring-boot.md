@@ -9,7 +9,7 @@ image:
   background: abstract-3.png
 comments: true
 share: true
-date: 2016-12-19T20:15:28+07:00
+date: 2017-01-13T20:15:28+07:00
 ---
 
 Setelah sekian lama tidak update blog, nah kali ini penulis akan membuat sebuah artikel mengenai bagaimana cara membuat RESTful Web Service dengan menggunakan Framework Spring Boot :). Spring Boot merupakan salah satu project dari pivotal yaitu sebuah perusahaan yang mengembangkan framework spring. Bagi anda yang belum kenal dengan spring framework bisa membaca artikel di [Belajar Spring Framework](https://rizkimufrizal.github.io/belajar-framework-spring/). Karena spring framework merupakan salah satu framework dari bahasa pemrograman java maka anda diwajibkan untuk melakukan instalasi java, bagi anda yang belum melakukan instalasi java dapat membaca artikel [Instalasi Perlengkapan Coding Java](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/).
