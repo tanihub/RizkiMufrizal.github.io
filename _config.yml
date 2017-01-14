@@ -3,8 +3,8 @@ description:      Merupakan Blog pribadi yang berisi artikel :)
 disqus_shortname: httprizkimufrizalgithubio
 reading_time:     true
 words_per_minute: 200
-#url: https://rizkimufrizal.github.io
-url:
+url: https://rizkimufrizal.github.io
+#url:
 
 # Owner/author information
 owner:
