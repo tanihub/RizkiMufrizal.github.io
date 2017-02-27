@@ -9,7 +9,7 @@ image:
   background: abstract-3.png
 comments: true
 share: true
-date: 2017-01-13T20:15:28+07:00
+date: 2017-02-8T20:15:28+07:00
 ---
 
 Bicara mengenai database, seorang database administrator harus mengetahui seluk beluk dari database, salah satunya adalah proses backup dan restore database. Database tanpa backup adalah suatu hal yang sangat fatal dikarenakan jika suatu waktu terjadi sesuatu pada database production maka hilang sudah semua harapan :D. Pada artikel ini, penulis akan mencoba membuat sebuah backup data lalu kita akan restore.
@@ -36,13 +36,13 @@ Setelah selesai, silahkan anda membuat `docker-compose.yml` karena kita akan men
 mongodb-production:
   container_name: mongodb-production
   image: mongo:latest
-  ports: 
+  ports:
     - 27000:27017
 
 mongodb-backup:
   container_name: mongodb-backup
   image: mongo:latest
-  links: 
+  links:
     - mongodb-production
   ports:
     - 27001:27017
@@ -121,13 +121,13 @@ Karena ada perubahan konfigurasi, maka kita harus melakukan perubahan pada file 
 mongodb-production:
   container_name: mongodb-production
   image: mongo:latest
-  ports: 
+  ports:
     - 27000:27017
 
 mongodb-backup:
   container_name: mongodb-backup
   image: rizki.mufrizal/mongo-backup
-  links: 
+  links:
     - mongodb-production
   ports:
     - 27001:27017
@@ -168,11 +168,11 @@ db.createCollection('tb_barang');
 Untuk melakukan insert, silahkan jalankan perintah berikut.
 
 {% highlight bash %}
-db.tb_barang.insert( 
+db.tb_barang.insert(
   [
     { nama_barang: 'rinso', jumlah_barang: 10, harga_barang: 500 },
     { nama_barang: 'aqua', jumlah_barang: 50, harga_barang: 100 },
-    { nama_barang: 'floridina', jumlah_barang: 10, harga_barang: 5000 }  
+    { nama_barang: 'floridina', jumlah_barang: 10, harga_barang: 5000 }
   ]
 );
 {% endhighlight %}
