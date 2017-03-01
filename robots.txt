@@ -1,5 +1,3 @@
-User-agent: Googlebot-Image
-Disallow: /
 User-agent: *
 Allow: /
 Sitemap: http://rizkimufrizal.github.io/sitemap.xml
