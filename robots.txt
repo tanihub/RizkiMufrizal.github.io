@@ -1,4 +1,5 @@
+User-agent: Googlebot-Image
+Disallow: /
 User-agent: *
 Allow: /
-Allow: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 Sitemap: http://rizkimufrizal.github.io/sitemap.xml
